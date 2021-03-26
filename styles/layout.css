@@ -1,3 +1,8 @@
+body {
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
 .header-section {
   background-color: #f4f4f4;
   height: 70px;
@@ -45,13 +50,15 @@
 }
 
 #navbar {
-  position: absolute;
+  position: fixed;
   display: block;
   top: 70px;
   left: 0;
   right: 0;
   font-size: 12px;
   font-weight: bold;
+  z-index: 2;
+  background-color: white;
 }
 
 #navbar > nav {
@@ -77,7 +84,7 @@
   display: flex;
   align-self: flex-end;
   height: 5vh;
-  width: 13.12vw;
+  width: 180px;
   font-size: 13px;
   color: #676C72;
   background: #D1D3D4 0% 0% no-repeat padding-box;
@@ -138,6 +145,67 @@ div.col-sm {
   padding: 0px !important;
 }
 
+.footer-links div.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 250px;
+  height: auto;
+  background-color: #484a52;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  height: auto;
+  background-color: #363232;
+}
+
+.footer-info p {
+  margin: 0px 5px !important;
+  padding: 0px !important;
+  align-self: center;
+}
+
+.card {
+  background-color: #484a52 !important;
+  font-size: 13px;
+  width: 30%;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.op-6 {
+  opacity: .6 !important;
+}
+
+.header-body-card {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-card {
+  background-color: #AB608B;
+  padding: 5px;
+}
+
+.mainSection {
+  padding: 20px 0px;
+}
+
 @media screen and (max-width: 993px) {
   .last-navbar {
     display: none !important;
@@ -155,3 +223,40 @@ div.col-sm {
     margin-top: 62px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .footer-links div.row {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+  }
+
+  .footer-info p, .footer-info div {
+    align-self: flex-start;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .header-section-logo {
+    margin-left: 5px;
+  }
+
+  .header-section-info {
+    margin-right: 5px;
+  }
+}
+
+/*@media screen and (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+
+  .card > .card-body {
+    justify-content: center;
+  }
+}*/
