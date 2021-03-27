@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../font/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
 body {
   background-color: #f4f4f4;
   overflow-x: hidden;
@@ -134,7 +144,7 @@ button.navbar-toggler {
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: #f4f4f4;
+  background-color: white;
   border-right: 1px solid #eee;
   z-index: 3;
   width: 250px;
@@ -147,12 +157,38 @@ button.navbar-toggler {
   margin-top: 40px;
 }
 
+.menu-mobile-content {
+  padding: 0;
+}
+
+.menu-mobile-content .list-group a {
+  padding-left: 40px;
+  font-size: 12px;
+}
+
+.navbar-nav-mobile a.active {
+  background-color: #484a52;
+}
+
+.navbar-nav-mobile a.active-sublist {
+  font-weight: bold;
+}
+
+.navbar-nav-mobile a {
+  border: 0;
+  font-family: "Roboto Medium";
+}
+
 .close-mobile-menu {
   position: absolute;
   display: block;
   top: 0px;
   right: 10px;
   font-size: 30px;
+}
+
+.close-mobile-menu:hover {
+  cursor: pointer;
 }
 
 .toggle-menu-mobile {

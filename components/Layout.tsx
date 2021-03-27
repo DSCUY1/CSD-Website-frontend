@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import ControlledCarousel from './toolsComponent/customCarousel';
+import NavbarCollapse from './toolsComponent/customCollapse';
 import CustomCardFooter from './toolsComponent/customCardFooter';
 
 class Layout extends Component {
@@ -43,15 +44,64 @@ class Layout extends Component {
           <div className="row">
             <div className={`menu-navbar ${this.state.toggleMenuMobile}`}>
               <span className="close-mobile-menu" onClick={() => this.handleToggleMenuMobile("")}>&times;</span>
-              <div className="navbar-nav-mobile">
-                <a className="nav-link active" aria-current="page" href="#">Acceuil</a>
-                <a className="nav-link" aria-current="page" href="#">Département</a>
-                <a className="nav-link" aria-current="page" href="#">Informations</a>
-                <a className="nav-link" aria-current="page" href="#">Formation</a>
-                <a className="nav-link" aria-current="page" href="#">Espace Etudiants</a>
-                <a className="nav-link" aria-current="page" href="#">Ancien Etudiants</a>
-                <a className="nav-link" aria-current="page" href="#">Nos Partenaires</a>
-                <a className="nav-link" aria-current="page" href="#">Blog</a>
+              <div className="list-group navbar-nav-mobile">
+                <NavbarCollapse
+                  trigger={<a className="list-group-item list-group-item-action active" href="#">Acceuil</a>}
+                >
+                  <div className="list-group">
+                    <a className="list-group-item list-group-item-action active-sublist" href="# ">Barbillard</a>
+                    <a className="list-group-item list-group-item-action " href="# ">Evenements</a>
+                  </div>
+                </NavbarCollapse>
+
+                <NavbarCollapse
+                  trigger={<a className="list-group-item list-group-item-action" href="#">Departement</a>}
+                >
+                  <div className="list-group">
+                    <a className="list-group-item list-group-item-action" href="# ">Présentation</a>
+                    <a className="list-group-item list-group-item-action " href="# ">Condition d'admission</a>
+                    <a className="list-group-item list-group-item-action active-sublist" href="# ">Coodonées</a>
+                    <a className="list-group-item list-group-item-action" href="# ">Nos poles</a>
+                    <a className="list-group-item list-group-item-action" href="# ">Nos enseignants</a>
+                    <a className="list-group-item list-group-item-action" href="# ">Nos options et débouché</a>
+                  </div>
+                </NavbarCollapse>
+
+                <NavbarCollapse
+                  trigger={<a className="list-group-item list-group-item-action" href="#">Informations</a>}
+                >
+                  <p>Hello</p>
+                </NavbarCollapse>
+
+                <NavbarCollapse
+                  trigger={<a className="list-group-item list-group-item-action" href="#">Formation</a>}
+                >
+                  <p>Hello</p>
+                </NavbarCollapse>
+
+                <NavbarCollapse
+                  trigger={<a className="list-group-item list-group-item-action" href="#">Espace Etudiants</a>}
+                >
+                  <p>Hello</p>
+                </NavbarCollapse>
+
+                <NavbarCollapse
+                  trigger={<a className="list-group-item list-group-item-action" href="#">Ancien Etudiants</a>}
+                >
+                  <p>Hello</p>
+                </NavbarCollapse>
+
+                <NavbarCollapse
+                  trigger={<a className="list-group-item list-group-item-action" href="#">Nos Partenaires</a>}
+                >
+                  <p>Hello</p>
+                </NavbarCollapse>
+
+                <NavbarCollapse
+                  trigger={<a className="list-group-item list-group-item-action" href="#">Blog</a>}
+                >
+                  <p>Hello</p>
+                </NavbarCollapse>
               </div>
             </div>
             <div className="col-sm">

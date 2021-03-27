@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
 import { Collapse, Button } from 'react-bootstrap';
 
-function NavbarCollapse({ children }) {
+function NavbarCollapse({ children, trigger }) {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <Button
+      <div
         onClick={() => setOpen(!open)}
         aria-controls="example-collapse-text"
         aria-expanded={open}
-        style={{ height: "45px" }}
       >
-        click
-      </Button>
+        {trigger}
+      </div>
       <Collapse in={open}>
-        { children }
+        <div className="menu-mobile-content">
+          { children }
+        </div>
       </Collapse>
     </>
   );
