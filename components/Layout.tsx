@@ -5,6 +5,18 @@ import ControlledCarousel from './toolsComponent/customCarousel';
 import CustomCardFooter from './toolsComponent/customCardFooter';
 
 class Layout extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      toggleMenuMobile: ""
+    }
+  }
+
+  handleToggleMenuMobile = (className) => {
+    this.setState({ toggleMenuMobile: className });
+  }
+
   render() {
     let header_card1 = <>
       <img src="/static/logo_fac.png" alt="..." style={{ height: "60px", width: "60px" }}/>
@@ -23,13 +35,14 @@ class Layout extends Component {
       <>
         <Head>
             <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
             <title>{this.props.title}</title>
         </Head>
 
         <div className="container-fluid">
           <div className="row">
-            <div className="menu-navbar">
+            <div className={`menu-navbar ${this.state.toggleMenuMobile}`}>
+              <span className="close-mobile-menu" onClick={() => this.handleToggleMenuMobile("")}>&times;</span>
               <div className="navbar-nav-mobile">
                 <a className="nav-link active" aria-current="page" href="#">Acceuil</a>
                 <a className="nav-link" aria-current="page" href="#">Département</a>
@@ -55,7 +68,7 @@ class Layout extends Component {
 
               <div id="navbar">
                 <nav className="navbar-expand-lg navbar-light d-flex first-navbar">
-                  <button className="navbar-toggler" type="button">
+                  <button className="navbar-toggler" type="button" onClick={() => this.handleToggleMenuMobile("toggle-menu-mobile")}>
                     <span className="navbar-toggler-icon"></span>
                   </button>
 

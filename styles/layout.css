@@ -83,7 +83,7 @@ body {
 .search_bar {
   display: flex;
   align-self: flex-end;
-  height: 5vh;
+  height: 40px;
   width: 180px;
   font-size: 13px;
   color: #676C72;
@@ -128,7 +128,7 @@ button.navbar-toggler {
 }
 
 .menu-navbar {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   top: 0;
@@ -136,9 +136,27 @@ button.navbar-toggler {
   bottom: 0;
   background-color: #f4f4f4;
   border-right: 1px solid #eee;
-  z-index: 2;
+  z-index: 3;
   width: 250px;
-  display: none;
+  margin-left: -250px;
+  transition: transform .4s ease;
+  overflow-y: scroll;
+}
+
+.navbar-nav-mobile {
+  margin-top: 40px;
+}
+
+.close-mobile-menu {
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.toggle-menu-mobile {
+  transform: translateX(250px);
 }
 
 div.col-sm {
@@ -236,6 +254,7 @@ div.col-sm {
 
   .footer-info p, .footer-info div {
     align-self: flex-start;
+    margin-top: 10px;
   }
 
   .card {
