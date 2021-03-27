@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
-import ControlledCarousel from './toolsComponent/customCarousel';
+import {AlertMessage} from './toolsComponent/customCarousels';
 import Footer from './footer';
 import NavbarNavigation from './navbar';
 import NavbarNavigationMobile from './navbarMobile';
@@ -49,7 +49,7 @@ class Layout extends Component {
 
               <NavbarNavigation ToggleMenuMobile={this.handleToggleMenuMobile} />
 
-              <ControlledCarousel />
+              <AlertMessage />
 
               <div className="mainSection">
                 {this.props.children}

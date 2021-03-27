@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../font/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
+.section-presentation {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.section-presentation div.card,
+.section-presentation div.card div.card-header,
+.section-presentation div.card div.card-footer {
+  background-color: white !important;
+}
+
+.section-presentation div.card {
+  margin-left: 20px;
+}
+
+.section-presentation div.card div.card-footer {
+  justify-content: space-between;
+}
+
+.image-important {
+  display: flex;
+  align-self: center;
+  height: 250px;
+  margin-right: 20px;
+}
+
+.image-important div.carousel-inner {
+  /*height: 250px;*/
+  height: auto;
+}
+
+.image-importante-picture {
+  height: 250px !important;
+}
+
+.image-important ol.carousel-indicators {
+  display: none;
+}
+
+.image-important div.carousel-inner div.carousel-item {
+  position: relative;
+}
+
+.text-information {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  height: 40%;
+  width: 45%;
+  background-color: rgba(0, 0, 0, .6);
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.text-information h3 {
+  font-weight: bold;
+  font-family: "Roboto Bold";
+}
+
+.section_presentation .pres_footer a {
+    border-radius: 0px;
+    width: 200px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.pres_title {
+    font-size: 50px;
+    color: #6A4E77 !important;
+    margin-bottom: -10px;
+}
+
+.pres_subtitle {
+    color: #676C72;
+}
+
+.texte {
+    margin-right: 5%;
+    color: #676C72 !important;
+    font-size: 13px;
+    font-family: "Roboto Regular";
+}
+
+.hover {
+    background-color: #6a4e77;
+    border: none;
+    color: #E5E5E5!important;
+    border: 2px solid transparent;
+}
+
+.hover:hover {
+  background-color: white;
+  color: #AB608B !important;
+  border: 2px solid #AB608B;
+}
+
+.nohover {
+    background-color: white;
+    color: #AB608B;
+    border: 2px solid #AB608B;
+}
+
+.nohover:hover {
+  background-color: #6a4e77;
+  border: none;
+  color: #E5E5E5!important;
+  border: 2px solid transparent;
+}
+
+@media screen and (max-width: 777px) {
+  .section-presentation {
+    flex-direction: column;
+  }
+
+  .image-important {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+
+  .img-entity {
+    height: 250px !important;
+  }
+
+  .image-important ol.carousel-indicators {
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+  }
+}
