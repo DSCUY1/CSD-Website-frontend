@@ -8,6 +8,10 @@
     src: url("../font/Roboto/Roboto-Regular.ttf");
 }
 
+.btn {
+  border-radius: 0 !important;
+}
+
 .section-presentation {
   display: flex;
   flex-direction: row;
@@ -21,23 +25,19 @@
 }
 
 .section-presentation div.card {
-  margin-left: 20px;
-}
-
-.section-presentation div.card div.card-footer {
-  justify-content: space-between;
+  /*margin-left: 20px;*/
 }
 
 .image-important {
   display: flex;
   align-self: center;
-  height: 250px;
+  height: auto;
   margin-right: 20px;
 }
 
 .image-important div.carousel-inner {
-  /*height: 250px;*/
   height: auto;
+  width: 100%;
 }
 
 .image-importante-picture {
@@ -97,6 +97,15 @@
     color: #676C72;
 }
 
+.pres_footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pres_footer a {
+  width: 40%;
+}
+
 .texte {
     margin-right: 5%;
     color: #676C72 !important;
@@ -130,7 +139,108 @@
   border: 2px solid transparent;
 }
 
-@media screen and (max-width: 777px) {
+.info-universite {
+  margin-top: 30px;
+  font-family: "Roboto Regular";
+}
+
+.programmes {
+  padding: 0;
+}
+
+.programmes div.card {
+  background-color: white !important;
+  padding: 20px 0;
+}
+
+.programmes-header {
+  padding-left: 30px;
+  background-color: white !important;
+  border: 0;
+}
+
+.programmes-header h5, .list-info h5 {
+  border-left: 7px solid #DE3A99;
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+.programmes-header p {
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.programmes-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.programmes-body div:first-child {
+  display: flex;
+  flex: 6;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.programmes-body--list {
+  justify-content: space-around;
+}
+
+.programmes-body--list ul {
+  margin-bottom: 20px;
+}
+
+.programmes-body--list ul li {
+  list-style: none;
+  color: #6A4E77;
+  font-weight: bold;
+}
+
+.programmes-body div:last-child {
+  display: flex;
+  flex: 4;
+}
+
+.list-info {
+  padding-left: 0 !important;
+}
+
+.list-info h5 {
+  color: #6A4E77;
+  font-family: "Roboto Regular";
+}
+
+.list-info li.list-group-item {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.event p span {
+  font-weight: bold;
+}
+
+.event p p {
+  color: #6A4E77;
+  font-size: 12px;
+  font-family: "Roboto Bold";
+  margin-bottom: 0;
+}
+
+.barbillard, .barbillard div.card, .list-info li.list-group-item {
+  background-color: #f4f4f4 !important;
+}
+
+.btn_per {
+    background-color: #AB608B;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 0;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
   .section-presentation {
     flex-direction: column;
   }
@@ -145,9 +255,28 @@
     height: 250px !important;
   }
 
-  .image-important ol.carousel-indicators {
-    display: inline-flex;
-    justify-content: flex-end;
-    margin-bottom: 5px;
+  .text-information {
+    display: none;
+  }
+
+  .pres_title {
+    font-size: 24px;
+  }
+
+  .pres_subtitle {
+    font-size: 16px;
+  }
+
+  .pres_footer a {
+    width: 48%;
+    font-size: 14px;
+  }
+
+  .image-important div.carousel-inner {
+    margin-top: auto;
+  }
+
+  .barbillard {
+    margin-top: 20px;
   }
 }
