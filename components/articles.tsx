@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Article() {
+export function ArticleBarbillard() {
   return (
     <div className="card w-100">
       <div className="card-body">
@@ -36,4 +36,21 @@ function Article() {
   );
 }
 
-export default Article;
+export function ArticleImportant() {
+  return (
+    <div class="col-sm-6 col-md-4 col-xs-12 col-lg-4 mt-3 ">
+      <div class="card w-100 max-height shadow-sm me-3 article">
+        <img src="/static/home.png" class="card-img-top img-card-size" alt="..." />
+        <div class="card-body font-small article-body">
+          <p class="card-title pb-3 color-violet">Comment Shikamaru Nara arrive à gagner les combats sans être fort physiquement?</p>
+          <small class="text-muted">Mars 2021</small>
+          <p class="card-text pt-2 text-muted">Masashi Kishimoto a révélé qu’il aimait beaucoup Shikamaru en raison de sa nature facile à vivre en dépit de son génie, et contrastée à contrario de la personnalité intelligente mais agressive de Sasuke Uchiwa. L’auteur a fait
+            remarquer qu’il épouserait Shikamaru s’il était une fille, notant que Shikamaru serait susceptible de réussir dans la vie. Lors de la conception de Shikamaru dans la seconde partie, Kishimoto a voulu donner une apparence unique
+            à son personnage, malgré le gilet que portent tous les ninjas confirmés.</p>
+
+          <a class="btn color-dark-pink fst-italic">Lire</a>
+        </div>
+      </div>
+    </div>
+  );
+}

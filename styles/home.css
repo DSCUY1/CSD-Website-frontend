@@ -245,6 +245,147 @@
     margin-left: 20px;
 }
 
+.events-links {
+  margin-top: 30px;
+  background-color: #f4f4f4;
+}
+
+.links {
+  padding: 0px;
+}
+
+.links div.card {
+  border: 1px solid #dfdfdf;
+}
+
+.links-header, .links-body {
+  background-color: white;
+  border: 0;
+}
+
+.links-header h5 {
+  font-size: calc(1.3rem + .6vw);
+  font-family: "Roboto Regular";
+  margin-left: 30px;
+}
+
+.links-body--list {
+  padding-right: 40px;
+}
+
+.links-body--list a {
+  text-align: left;
+  font-size: 15px;
+  font-family: "Roboto Bold";
+  margin-left: 10px;
+}
+
+.events-header, .events-body, .events-footer {
+  background-color: #f4f4f4;
+  border: 0;
+}
+
+.events-body {
+  margin: 0px;
+  padding: 0 20px;
+}
+
+.events-header h5 {
+  font-size: calc(1.3rem + .6vw);
+  font-family: "Roboto Regular";
+  margin-left: 30px;
+  padding: 10px 0 !important;
+  color: #6A4E77;
+}
+
+.events > div.card {
+  border: .7px solid #dfdfdf;
+  margin-bottom: 20px;
+}
+
+.events > div.card, .events-header {
+  padding: 0 !important;
+}
+
+.event-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  font-size: 11px;
+  background-color: #f4f4f4;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+.event-item-content span:first-child {
+  font-weight: bold;
+  font-family: "Roboto Bold";
+}
+
+.event-item-content span:last-child {
+  color: #6A4E77;
+  font-weight: bold;
+}
+
+.events-btn {
+  margin-top: 9px;
+  width: 60% !important;
+}
+
+.card_date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 70px;
+  background-color: #6A4E77;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Regular";
+  font-weight: bold;
+}
+
+.event-item p.card-text {
+  margin-left: 10px;
+}
+
+.card_date p {
+  margin: 0;
+}
+
+.link_btn {
+    background-color: #AB608B;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 90%;
+    justify-content: center;
+    min-height: 45px;
+    padding-top: 10px;
+    border: 2px solid transparent;
+}
+
+.link_btn:hover {
+  border: 2px solid #AB608B;
+  background-color: white;
+  color: #AB608B;
+}
+
+.article, .article-body {
+  background-color: white;
+  border: 0;
+}
+
+.articles {
+  margin-top: 20px;
+}
+
+.article {
+  box-shadow: 1px 2px 5px grey;
+}
+
 @media screen and (max-width: 767px) {
   .section-presentation {
     flex-direction: column;
@@ -283,5 +424,13 @@
 
   .barbillard {
     margin-top: 20px;
+  }
+
+  .events-links {
+    margin-top: 20px;
+  }
+
+  .events-body {
+    padding: 0;
   }
 }

@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Layout from '../components/Layout';
 import { ImportantImage } from '../components/toolsComponent/customCarousels';
-import Article from '../components/article';
+import { ArticleBarbillard, ArticleImportant } from '../components/articles';
+import UsefullLink from '../components/usefullLink';
+import Event from '../components/event';
 
 export default function Home() {
   return (
@@ -70,8 +72,47 @@ export default function Home() {
             </div>
 
             <div className="col-md-6 barbillard">
-              <Article />
+              <ArticleBarbillard />
             </div>
+
+          </div>
+
+          <div className="row events-links">
+            <div className="col-md-6 events">
+              <div className="card w-100">
+                <div className="card-header events-header">
+                  <h5>Nos évènements</h5>
+                </div>
+
+                <div className="card-body events-body">
+
+                  <Event />
+                  <Event />
+                  <Event />
+
+                </div>
+
+                <div className="card-footer events-footer">
+                  <a href="#" class="btn link_btn events-btn" tabIndex={-1} role="button" aria-disabled="true">Tous nos évènements  <span>&rarr;</span></a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 links">
+              <UsefullLink />
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid">
+          <div className="row articles">
+
+            <ArticleImportant />
+            <ArticleImportant />
+            <ArticleImportant />
+            <ArticleImportant />
+            <ArticleImportant />
+            <ArticleImportant />
+
           </div>
         </div>
 
@@ -79,80 +120,49 @@ export default function Home() {
   )
 }
 
-// <div class="container-fluid">
-//         <div class="row info_univ">
+// <div class="card col-sm-11 bg-parent ms-lg-4 pe-lg-3">
 
-//             <div class="col-sm-6 col-md-6 school_path">
-
-//                 <div class="card shadow-sm">
-
-//                     <div class="card-body">
-//                         <h5 class="card-title">Nos programmes de formation</h5>
-//                         <p class="card-text">Le Département d’informatique offre trois programmes de formation fondamentale et deux programmes de formation professionnelle :</p>
-//                     </div>
-
-//                     <div class="row g-0">
-//                         <div class="col-md-7">
-//                             <div class="card-body">
-//                                 <ul class="list-group">
-//                                     <li>Licence fondamentale</li>
-//                                     <li>Master recherche</li>
-//                                     <li>Doctorat informatique</li>
-//                                 </ul>
-//                                 <ul class="list-group">
-//                                     <li>Licence professionnelle</li>
-//                                     <li>Master professionnelle RAM</li>
-//                                     <li>Master professionnelle SIGL</li>
-//                                 </ul>
-//                             </div>
-//                         </div>
-
-//                         <div class="col-md-4">
-//                             <img src="../image/casquet.png" alt="..." />
-//                         </div>
-//                     </div>
-
-//                     <div class="border_info"></div>
-//                 </div>
-
-//             </div>
-
-//             <div class="col-sm col-md communicated">
-//                 <div class="card col-sm-11">
-
-//                     <div class="row g-0">
+//                     <div class="row ">
 
 //                         <div class="card-body">
 
-//                             <ul class="list_info">
-//                                 <h5 class="card-title">Babillard</h5>
+//                             <ul>
+//                                 <h5 class="card-title color-violet fs-3 pt-3">Nos évènements</h5>
 
-//                                 <li class="list-group-item">
+//                                 <li class="list-group-item d-flex">
+//                                     <div class="card_date me-3">
+//                                         <p>12<br>Avril</p>
+//                                     </div>
 //                                     <p class="card-text">
-//                                         <span>11 mars 2021</span><br/>
-//                                         <small class="text-muted">Séminaire sur la cybersecurite</small><br/> il sera organisé le 12 avril un séminaire sur la cybersecurite au Déddartement sur le thème : Cyber-attaque et Cyber-defense
+//                                         <small class="text-muted">{Séminaire sur la cybersecurite}</small><br>
+//                                         <span>11 mars 2021</span>
+//                                         <br> il sera organisé le 12 avril un séminaire sur la cybersecurite au Déddartement sur le thème : Cyber-attaque et Cyber-defense
 //                                     </p>
 //                                 </li>
-//                                 <li class="list-group-item">
+//                                 <li class="list-group-item d-flex">
+//                                     <div class="card_date me-3">
+//                                         <p>12<br>Avril</p>
+//                                     </div>
 //                                     <p class="card-text">
-//                                         <span>11 mars 2021</span><br/>
-//                                         <small class="text-muted">Séminaire sur la cybersecurite</small><br/> il sera organisé le 12 avril un séminaire sur la cybersecurite au Déddartement sur le thème : Cyber-attaque et Cyber-defense
+//                                         <small class="text-muted">{Séminaire sur la cybersecurite}</small><br>
+//                                         <span>11 mars 2021</span>
+//                                         <br> il sera organisé le 12 avril un séminaire sur la cybersecurite au Déddartement sur le thème : Cyber-attaque et Cyber-defense
 //                                     </p>
 //                                 </li>
-//                                 <li class="list-group-item">
+//                                 <li class="list-group-item d-flex">
+//                                     <div class="card_date me-3">
+//                                         <p>12<br>Avril</p>
+//                                     </div>
 //                                     <p class="card-text">
-//                                         <span>11 mars 2021</span><br/>
-//                                         <small class="text-muted">Séminaire sur la cybersecurite</small><br/> il sera organisé le 12 avril un séminaire sur la cybersecurite au Déddartement sur le thème : Cyber-attaque et Cyber-defense
+//                                         <small class="text-muted">{Séminaire sur la cybersecurite}</small><br>
+//                                         <span>11 mars 2021</span>
+//                                         <br> il sera organisé le 12 avril un séminaire sur la cybersecurite au Déddartement sur le thème : Cyber-attaque et Cyber-defense
 //                                     </p>
 //                                 </li>
 //                             </ul>
-//                             <a href="#" class="btn btn_per btn-lg" tabindex="-1" role="button" aria-disabled="true">Liste de tous les articles  <span>&rarr;</span></a>
+//                             <a href="#" class="btn btn_per btn-lg" tabindex="-1" role="button" aria-disabled="true">Tous nos évènements  <span>&rarr;</span></a>
 
-//                             <div class="border_communicate"></div>
 //                         </div>
 
 //                     </div>
 //                 </div>
-//             </div>
-
-//         </div>
