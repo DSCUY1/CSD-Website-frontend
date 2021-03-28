@@ -44,6 +44,11 @@
   height: 250px !important;
 }
 
+.alert-important ol.carousel-indicators {
+  position: absolute;
+  z-index: 1;
+}
+
 .image-important ol.carousel-indicators {
   display: none;
 }
