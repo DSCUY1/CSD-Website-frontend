@@ -46,18 +46,18 @@ export default function Home() {
             <div className="col-md-6 programmes">
               <div className="card w-100">
                 <div className="card-header programmes-header">
-                  <h5 class="card-title">Nos programmes de formation</h5>
-                  <p class="card-text">Le Département d’informatique offre trois programmes de formation fondamentale et deux programmes de formation professionnelle :</p>
+                  <h5 className="card-title">Nos programmes de formation</h5>
+                  <p className="card-text">Le Département d’informatique offre trois programmes de formation fondamentale et deux programmes de formation professionnelle :</p>
                 </div>
 
                 <div className="card-body programmes-body">
                   <div className="programmes-body--list">
-                    <ul class="list-group">
+                    <ul className="list-group">
                       <li>Licence fondamentale</li>
                       <li>Master recherche</li>
                       <li>Doctorat informatique</li>
                     </ul>
-                    <ul class="list-group">
+                    <ul className="list-group">
                       <li>Licence professionnelle</li>
                       <li>Master professionnelle RAM</li>
                       <li>Master professionnelle SIGL</li>
@@ -93,7 +93,7 @@ export default function Home() {
                 </div>
 
                 <div className="card-footer events-footer">
-                  <a href="#" class="btn link_btn events-btn" tabIndex={-1} role="button" aria-disabled="true">Tous nos évènements  <span>&rarr;</span></a>
+                  <a href="#" className="btn link_btn events-btn" tabIndex={-1} role="button" aria-disabled="true">Tous nos évènements  <span>&rarr;</span></a>
                 </div>
               </div>
             </div>
@@ -119,50 +119,3 @@ export default function Home() {
     </Layout>
   )
 }
-
-// <div class="card col-sm-11 bg-parent ms-lg-4 pe-lg-3">
-
-//                     <div class="row ">
-
-//                         <div class="card-body">
-
-//                             <ul>
-//                                 <h5 class="card-title color-violet fs-3 pt-3">Nos évènements</h5>
-
-//                                 <li class="list-group-item d-flex">
-//                                     <div class="card_date me-3">
-//                                         <p>12<br>Avril</p>
-//                                     </div>
-//                                     <p class="card-text">
-//                                         <small class="text-muted">{Séminaire sur la cybersecurite}</small><br>
-//                                         <span>11 mars 2021</span>
-//                                         <br> il sera organisé le 12 avril un séminaire sur la cybersecurite au Déddartement sur le thème : Cyber-attaque et Cyber-defense
-//                                     </p>
-//                                 </li>
-//                                 <li class="list-group-item d-flex">
-//                                     <div class="card_date me-3">
-//                                         <p>12<br>Avril</p>
-//                                     </div>
-//                                     <p class="card-text">
-//                                         <small class="text-muted">{Séminaire sur la cybersecurite}</small><br>
-//                                         <span>11 mars 2021</span>
-//                                         <br> il sera organisé le 12 avril un séminaire sur la cybersecurite au Déddartement sur le thème : Cyber-attaque et Cyber-defense
-//                                     </p>
-//                                 </li>
-//                                 <li class="list-group-item d-flex">
-//                                     <div class="card_date me-3">
-//                                         <p>12<br>Avril</p>
-//                                     </div>
-//                                     <p class="card-text">
-//                                         <small class="text-muted">{Séminaire sur la cybersecurite}</small><br>
-//                                         <span>11 mars 2021</span>
-//                                         <br> il sera organisé le 12 avril un séminaire sur la cybersecurite au Déddartement sur le thème : Cyber-attaque et Cyber-defense
-//                                     </p>
-//                                 </li>
-//                             </ul>
-//                             <a href="#" class="btn btn_per btn-lg" tabindex="-1" role="button" aria-disabled="true">Tous nos évènements  <span>&rarr;</span></a>
-
-//                         </div>
-
-//                     </div>
-//                 </div>
