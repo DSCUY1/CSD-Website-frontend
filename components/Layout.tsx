@@ -8,8 +8,6 @@ import NavbarNavigationMobile from './navbarMobile';
 
 class Layout extends Component {
   constructor() {
-    super();
-
     this.state = {
       toggleMenuMobile: ""
     }
