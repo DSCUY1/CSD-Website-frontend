@@ -60,9 +60,9 @@ body {
 }
 
 #navbar {
-  position: fixed;
+  position: sticky;
   display: block;
-  top: 70px;
+  top: 0;
   left: 0;
   right: 0;
   font-size: 12px;
@@ -116,9 +116,9 @@ button.navbar-toggler {
     border-bottom-style: outset;
 }
 
-.alert-important {
-  margin-top: 122px;
-}
+/*.alert-important {
+  margin-top: 62px;
+}*/
 
 .alert-important > div.carousel-inner > div.carousel-item {
   height: 50px;
@@ -260,6 +260,10 @@ div.col-sm {
   padding: 20px 0px;
 }
 
+.sticky-decoration {
+    box-shadow: 0 3px 10px 2px grey;
+}
+
 @media screen and (max-width: 993px) {
   .last-navbar {
     display: none !important;
@@ -274,7 +278,7 @@ div.col-sm {
   }
 
   .alert-important {
-    margin-top: 62px;
+    margin-top: 0px;
   }
 }
 

@@ -5,6 +5,7 @@ import {AlertMessage} from './toolsComponent/customCarousels';
 import Footer from './footer';
 import NavbarNavigation from './navbar';
 import NavbarNavigationMobile from './navbarMobile';
+import $ from 'jquery';
 
 class Layout extends Component {
   public props;
@@ -16,6 +17,21 @@ class Layout extends Component {
     this.state = {
       toggleMenuMobile: ""
     }
+  }
+
+  componentDidMount() {
+    $(function() {
+      let stickyElt = document.getElementById("navbar");
+      let headerElt = document.getElementById("header-section");
+
+      window.addEventListener("scroll", function () {
+          if (window.scrollY >= (stickyElt.offsetHeight + headerElt.offsetHeight - 30)) {
+          stickyElt.classList.add("sticky-decoration");
+      } else if (window.scrollY < (stickyElt.offsetHeight + headerElt.offsetHeight - 30)) {
+          stickyElt.classList.remove("sticky-decoration");
+          }
+      });
+    });
   }
 
   handleToggleMenuMobile = (className) => {
@@ -39,7 +55,7 @@ class Layout extends Component {
               <NavbarNavigationMobile />
             </div>
             <div className="col-sm">
-              <div className="container-fluid d-flex justify-content-between header-section">
+              <div className="container-fluid d-flex justify-content-between header-section" id="header-section">
                 <div className="header-section-logo">
                   <Image src="/static/logo_dark.png" height={45} width={45} alt="..." />
                   <p className="mt-2 ps-2">Université de Yaoundé I</p>

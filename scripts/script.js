@@ -16,7 +16,7 @@ $(document).ready(function() {
     };
 
     // Find all data-toggle="sticky-onscroll" elements
-    $('[data-toggle="sticky-onscroll"]').each(function() {
+    $("#navbar").each(function() {
         var sticky = $(this);
         var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
         sticky.before(stickyWrapper);
