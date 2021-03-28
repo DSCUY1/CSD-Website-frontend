@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import { Carousel } from 'react-bootstrap';
 
 export function AlertMessage() {
-  const [index: Number, setIndex: Function] = useState(0);
+  const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex: Number, e) => {
+  const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
 
@@ -30,9 +30,9 @@ export function AlertMessage() {
 }
 
 export function ImportantImage() {
-  const [index: Number, setIndex: Function] = useState(0);
+  const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex: Number, e) => {
+  const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
 

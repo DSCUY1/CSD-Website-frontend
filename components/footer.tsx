@@ -24,7 +24,6 @@ function Footer() {
             <CustomCardFooter
               headerCard={header_card1}
               footerCard={footer_card1}
-              className="col-lg-4 col-md-6 col-sm-12"
             >
               <a href="#" className="text-decoration-none text-white">Présentation</a><br/>
               <a href="#" className="text-decoration-none text-white">Conditions d'admission</a><br/>
@@ -36,7 +35,6 @@ function Footer() {
             <CustomCardFooter
               headerCard={header_card2}
               footerCard={footer_card2}
-              className="col-lg-4 col-md-6 col-sm-12"
             >
               <a href="#" className="text-decoration-none text-white">Babillard</a><br/>
               <a href="#" className="text-decoration-none text-white">Espaces Etudiants</a><br/>
@@ -47,7 +45,7 @@ function Footer() {
 
             <CustomCardFooter
               headerCard={header_card3}
-              className="col-lg-4 col-md-6 col-sm-12"
+              footerCard={null}
             >
               <a href="#" className="text-decoration-none text-white">Faculté des Sciences</a><br/>
                 <a href="#" className="text-decoration-none text-white">Ecole Doctorale CRFD Sciences et Technologies</a><br/>

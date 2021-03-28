@@ -26,17 +26,17 @@ function NavbarNavigation({ ToggleMenuMobile }) {
       <hr />
       <nav className="navbar-expand-lg navbar-light d-flex last-navbar">
         <div className="collapse navbar-collapse sub_menu d-flex flex-column align-items-start" id="navbarNavAltMarkup ">
-          <div className="navbar-nav d-none" id="home ">
-            <a className="nav-link active" aria-current="page " href="# ">Barbillard</a>
-            <a className="nav-link " aria-current="page " href="# ">Evenements</a>
+          <div className="navbar-nav d-none" id="home">
+            <a className="nav-link active" aria-current="page" href="#">Barbillard</a>
+            <a className="nav-link" aria-current="page" href="#">Evenements</a>
           </div>
-          <div className="navbar-nav" id="departement ">
-            <a className="nav-link" aria-current="page " href="# ">Présentation</a>
-            <a className="nav-link " aria-current="page " href="# ">Condition d'admission</a>
-            <a className="nav-link active" aria-current="page " href="# ">Coodonées</a>
-            <a className="nav-link " aria-current="page " href="# ">Nos poles</a>
-            <a className="nav-link " aria-current="page " href="# ">Nos enseignants</a>
-            <a className="nav-link " aria-current="page " href="# ">Nos options et débouché</a>
+          <div className="navbar-nav" id="departement">
+            <a className="nav-link" aria-current="page" href="#">Présentation</a>
+            <a className="nav-link" aria-current="page" href="#">Condition d'admission</a>
+            <a className="nav-link active" aria-current="page" href="#">Coodonées</a>
+            <a className="nav-link" aria-current="page" href="#">Nos poles</a>
+            <a className="nav-link" aria-current="page" href="#">Nos enseignants</a>
+            <a className="nav-link" aria-current="page" href="#">Nos options et débouché</a>
           </div>
         </div>
       </nav>

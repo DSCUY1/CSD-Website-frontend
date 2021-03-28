@@ -7,8 +7,11 @@ import NavbarNavigation from './navbar';
 import NavbarNavigationMobile from './navbarMobile';
 
 class Layout extends Component {
-  constructor() {
-    super();
+  public props;
+  public state;
+
+  constructor(props) {
+    super(props);
 
     this.state = {
       toggleMenuMobile: ""
@@ -23,7 +26,7 @@ class Layout extends Component {
     return (
       <>
         <Head>
-            <meta charset="UTF-8" />
+            <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
             <title>{this.props.title}</title>
         </Head>
