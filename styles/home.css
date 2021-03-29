@@ -41,7 +41,7 @@
 }
 
 .image-importante-picture {
-  height: 250px !important;
+  height: 90% !important;
 }
 
 .alert-important ol.carousel-indicators {
@@ -88,34 +88,51 @@
     border-radius: 0px;
     width: 200px;
     height: 40px;
-    margin-right: 10px;
     margin-top: 10px;
 }
 
+.section-presentation-header {
+  margin-left: 50px;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
 .pres_title {
-    font-size: 50px;
+    font-size: 40px;
     color: #6A4E77 !important;
-    margin-bottom: -10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .pres_subtitle {
     color: #676C72;
+    margin-bottom: 0px !important;
+    font-size: 16px;
 }
 
 .pres_footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .pres_footer a {
-  width: 40%;
+  width: 180px;
+  font-size: 14px;
+  margin-right: 10px;
 }
 
 .texte {
-    margin-right: 5%;
+    /*margin-right: 5%;*/
+    padding-left: 50px;
     color: #676C72 !important;
-    font-size: 13px;
+    font-size: 16px;
     font-family: "Roboto Regular";
+}
+
+.needs-validation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .hover {
@@ -155,13 +172,20 @@
 
 .programmes div.card {
   background-color: white !important;
-  padding: 20px 0;
+  padding: 20px  0;
+  width: 90%;
+  padding-left: 50px !important;
+}
+
+.programmes div.card div.card-header, .programmes div.card div.card-body {
+  padding-left: 0 !important;
 }
 
 .programmes-header {
   padding-left: 30px;
   background-color: white !important;
   border: 0;
+  padding-bottom: 20px;
 }
 
 .programmes-header h5, .list-info h5 {
@@ -178,6 +202,8 @@
 .programmes-body {
   display: flex;
   flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 0;
 }
 
 .programmes-body div:first-child {
@@ -203,6 +229,13 @@
 
 .programmes-body div:last-child {
   display: flex;
+  border: 0;
+  padding-bottom: 20px;
+}
+
+.programmes-header h5, .list-info h5 {
+  border-left: 7px solid #DE3A99;
+  font-size: 35px;
   flex: 4;
 }
 
@@ -225,6 +258,10 @@
   font-weight: bold;
 }
 
+.event {
+  /*padding: 2px 0;*/
+}
+
 .event p p {
   color: #6A4E77;
   font-size: 12px;
@@ -234,6 +271,16 @@
 
 .barbillard, .barbillard div.card, .list-info li.list-group-item {
   background-color: #f4f4f4 !important;
+}
+
+.barbillard div.card {
+  width: 90%;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.barbillard div.card div.card-body {
+  padding: 10px 10px;
 }
 
 .btn_per {
@@ -251,11 +298,18 @@
 }
 
 .links {
+  display: flex;
   padding: 0px;
+  justify-content: flex-end;
 }
 
 .links div.card {
   border: 1px solid #dfdfdf;
+  padding-right: 50px;
+  margin-left: 0px !important;
+  width: 97%;
+  background-color: white !important;
+
 }
 
 .links-header, .links-body {
@@ -270,7 +324,7 @@
 }
 
 .links-body--list {
-  padding-right: 40px;
+  /*padding-right: 40px;*/
 }
 
 .links-body--list a {
@@ -278,6 +332,7 @@
   font-size: 15px;
   font-family: "Roboto Bold";
   margin-left: 10px;
+  width: 100%;
 }
 
 .events-header, .events-body, .events-footer {
@@ -301,6 +356,14 @@
 .events > div.card {
   border: .7px solid #dfdfdf;
   margin-bottom: 20px;
+  width: 80%;
+  margin-left: 50px;
+}
+
+.events {
+  padding: 0px;
+  display: flex;
+  align-self: flex-end;
 }
 
 .events > div.card, .events-header {
@@ -380,10 +443,27 @@
 
 .articles {
   margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.articles div.article-important {
+  padding-left: 0 !important;
 }
 
 .article {
   box-shadow: 1px 2px 5px grey;
+}
+
+.btn_send {
+    position: absolute;
+    background-color: #6a4e77;
+    border-style: none;
+    width: 130px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    color: white;
 }
 
 @media screen and (max-width: 767px) {
@@ -395,6 +475,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     align-self: center;
+    margin-left: -20px;
   }
 
   .img-entity {
@@ -406,7 +487,7 @@
   }
 
   .pres_title {
-    font-size: 24px;
+    font-size: 20px !important;
   }
 
   .pres_subtitle {

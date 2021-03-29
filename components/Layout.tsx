@@ -55,9 +55,9 @@ class Layout extends Component {
               <NavbarNavigationMobile />
             </div>
             <div className="col-sm">
-              <div className="container-fluid d-flex justify-content-between header-section" id="header-section">
+              <div className="d-flex justify-content-between header-section" id="header-section">
                 <div className="header-section-logo">
-                  <Image src="/static/logo_dark.png" height={45} width={45} alt="..." />
+                  <img src="/static/logo_dark.png" alt="..." />
                   <p className="mt-2 ps-2">Université de Yaoundé I</p>
                 </div>
                 <div className="d-flex header-section-info">

@@ -39,31 +39,39 @@ export function ImportantImage() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} className="image-important">
       <Carousel.Item className="img-entity">
-        <img src="/static/home.png" className="d-block card-img w-100 image-important-picture" alt="..." />
-        <div className="text-information">
-          <h5 className="card-title fs-10">Université de Yaoundé I</h5>
-          <h3 className="fs-15">Departement d’Informatique</h3>
+        <div className="card w-100" style={{ margin: "20px 0px" }}>
+          <img src="/static/home.png" className="d-block card-img-top image-important-picture" alt="..." />
+          <div className="text-information">
+            <h5 className="card-title fs-10">Université de Yaoundé I</h5>
+            <h3 className="fs-15">Departement d’Informatique</h3>
+          </div>
         </div>
       </Carousel.Item>
       <Carousel.Item className="img-entity">
-        <img src="/static/home.png" className="d-block card-img w-100 image-important-picture" alt="..." />
-        <div className="text-information">
-          <h5 className="card-title fs-10">Université de Yaoundé I</h5>
-          <h3 className="fs-15">Departement d’Informatique</h3>
+        <div className="card w-100" style={{ margin: "20px 0px" }}>
+          <img src="/static/home.png" className="d-block card-img-top image-important-picture" alt="..." />
+          <div className="text-information">
+            <h5 className="card-title fs-10">Université de Yaoundé I</h5>
+            <h3 className="fs-15">Departement d’Informatique</h3>
+          </div>
         </div>
       </Carousel.Item>
       <Carousel.Item className="img-entity">
-        <img src="/static/home.png" className="d-block card-img w-100 image-important-picture" alt="..." />
-        <div className="text-information">
-          <h5 className="card-title fs-10">Université de Yaoundé I</h5>
-          <h3 className="fs-15">Departement d’Informatique</h3>
+        <div className="card w-100" style={{ margin: "20px 0px" }}>
+          <img src="/static/home.png" className="d-block card-img-top image-important-picture" alt="..." />
+          <div className="text-information">
+            <h5 className="card-title fs-10">Université de Yaoundé I</h5>
+            <h3 className="fs-15">Departement d’Informatique</h3>
+          </div>
         </div>
       </Carousel.Item>
       <Carousel.Item className="img-entity">
-        <img src="/static/home.png" className="d-block card-img w-100 image-important-picture" alt="..." />
-        <div className="text-information">
-          <h5 className="card-title fs-10">Université de Yaoundé I</h5>
-          <h3 className="fs-15">Departement d’Informatique</h3>
+        <div className="card w-100" style={{ margin: "20px 0px" }}>
+          <img src="/static/home.png" className="d-block card-img-top image-important-picture" alt="..." />
+          <div className="text-information">
+            <h5 className="card-title fs-10">Université de Yaoundé I</h5>
+            <h3 className="fs-15">Departement d’Informatique</h3>
+          </div>
         </div>
       </Carousel.Item>
     </Carousel>

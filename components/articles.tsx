@@ -2,7 +2,7 @@ import React from 'react'
 
 export function ArticleBarbillard() {
   return (
-    <div className="card w-100">
+    <div className="card" style={{ height: "100%" }}>
       <div className="card-body">
         <ul className="list-info">
           <h5 className="card-title">Babillard</h5>
@@ -38,7 +38,7 @@ export function ArticleBarbillard() {
 
 export function ArticleImportant() {
   return (
-    <div className="col-sm-6 col-md-4 col-xs-12 col-lg-4 mt-3 ">
+    <div className="article-important col-sm-6 col-md-4 col-xs-12 col-lg-4 mt-3 ">
       <div className="card w-100 max-height shadow-sm me-3 article">
         <img src="/static/home.png" className="card-img-top img-card-size" alt="..." />
         <div className="card-body font-small article-body">
