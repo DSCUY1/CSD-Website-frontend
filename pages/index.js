@@ -42,7 +42,7 @@ export default function Home() {
 
               </div>
 
-              <div className="col-md col-sm-12 d-flex p-0 mr-5">
+              <div className="col-md col-sm-12 d-flex p-0 image-interface">
                 <ImportantImage />
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function Home() {
 
             <div className="col-md pt-3 pe-5">
                 <h3 className="white_black">Localisation</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5629.657017099462!2d11.498124624891753!3d3.8597529818540495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcfa2c4cefca1%3A0x32ba16566cca02a0!2sDepartement%20D&#39;informatique%20et%20De%20Mathematiques!5e0!3m2!1sfr!2scm!4v1617029395613!5m2!1sfr!2scm" width="600" height="450" style={{ border:0 }} allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5629.657017099462!2d11.498124624891753!3d3.8597529818540495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcfa2c4cefca1%3A0x32ba16566cca02a0!2sDepartement%20D&#39;informatique%20et%20De%20Mathematiques!5e0!3m2!1sfr!2scm!4v1617029395613!5m2!1sfr!2scm" width="100%" height="450" style={{ border:0 }} allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
         </div>

@@ -20,7 +20,7 @@ function Footer() {
     <div className="container-fluid">
       <div className="row">
         <div className="col-sm footer-links">
-          <div className="row" style={{ paddingLeft: "50px", paddingRight: "50px" }}>
+          <div className="row">
             <CustomCardFooter
               headerCard={header_card1}
               footerCard={footer_card1}
@@ -57,7 +57,7 @@ function Footer() {
       </div>
       <div className="row">
         <div className="col-sm footer-info">
-          <p className="d-flex text-light fs-12" style={{ marginLeft: "50px" }}>Tous droits réservés © Université de Yaoundé I</p>
+          <p className="d-flex text-light fs-12">Tous droits réservés © Université de Yaoundé I</p>
           <div className="d-flex">
               <p className="text-light fs-12">Designed & Developed by</p>
               <img src="/static/logo_dsc.png" style={{ height: "40px" }} alt="" />

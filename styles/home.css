@@ -174,7 +174,7 @@
   background-color: white !important;
   padding: 20px  0;
   width: 90%;
-  padding-left: 50px !important;
+  padding-left: 50px;
 }
 
 .programmes div.card div.card-header, .programmes div.card div.card-body {
@@ -466,6 +466,10 @@
     color: white;
 }
 
+.image-interface {
+  margin-right: 50px;
+}
+
 @media screen and (max-width: 767px) {
   .section-presentation {
     flex-direction: column;
@@ -513,5 +517,61 @@
 
   .events-body {
     padding: 0;
+  }
+
+  .texte, .programmes div.card {
+    padding-left: 10px;
+  }
+
+  .events > div.card {
+    margin-left: 10px;
+  }
+
+  .links div.card {
+    padding-right: 10px;
+  }
+
+  .barbillard div.card {
+    margin-right: 10px;
+  }
+
+  .section-presentation-header {
+    margin-left: 10px;
+    padding-left: 0;
+    margin-top: 15px;
+  }
+
+  .image-important {
+    margin-left: 10px;
+  }
+
+  .programmes div.card {
+    width: 100%;
+  }
+
+  .barbillard div.card {
+    width: 100%;
+  }
+
+  .events div.card {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .links div.card {
+    width: 100%;
+  }
+
+  .event-header {
+    margin-left: 15px !important;
+  }
+
+  .articles {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .image-interface {
+    margin-right: 0px;
   }
 }
