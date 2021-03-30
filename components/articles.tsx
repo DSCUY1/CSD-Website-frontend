@@ -16,7 +16,7 @@ export function ArticleBarbillard({ barbillards }) {
 
             {
               barbillards.map(bar => (
-                <li className="list-group-item event" onClick={setShow} key={bar.id}>
+                <li className="list-group-item event" onClick={handleShow} key={bar.id}>
                   <p className="card-text">
                     <span>{ bar.date }</span><br/>
                     <small className="text-muted">{ bar.title }</small><br/>

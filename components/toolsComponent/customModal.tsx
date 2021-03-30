@@ -14,7 +14,7 @@ export function EventModal({ show, setClose, event }) {
         </Modal.Title>
       </Modal.Header>
 
-      <Modal.Body closeButton>
+      <Modal.Body>
         <img src="/static/home.png" alt="" className="card-img-top" height="200px" />
         <div className="modal-form">
           { event.content }
@@ -41,7 +41,7 @@ export function BarbillardModal({ show, setClose, barbillard }) {
         </Modal.Title>
       </Modal.Header>
 
-      <Modal.Body closeButton>
+      <Modal.Body>
         <img src="/static/home.png" alt="" className="card-img-top" height="200px" />
         <div className="modal-form">
           { barbillard.content }
