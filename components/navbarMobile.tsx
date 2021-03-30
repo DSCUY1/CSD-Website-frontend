@@ -17,75 +17,81 @@ function NavbarNavigationMobile() {
 
   return (
     <div className="list-group navbar-nav-mobile">
-      <NavbarCollapse
-        trigger={mobileMenu.accueil}
-      >
-        <div className="list-group">
-          <a className="list-group-item list-group-item-action active-sublist" href="# ">Barbillard</a>
-          <a className="list-group-item list-group-item-action " href="# ">Evenements</a>
-        </div>
-      </NavbarCollapse>
+      <div className="scroll-menu">
+        <NavbarCollapse
+          trigger={mobileMenu.accueil}
+        >
+          <div className="list-group">
+            <a className="list-group-item list-group-item-action active-sublist" href="# ">Barbillard</a>
+            <a className="list-group-item list-group-item-action " href="# ">Evenements</a>
+          </div>
+        </NavbarCollapse>
 
-      <NavbarCollapse
-        trigger={mobileMenu.departement}
-      >
-        <div className="list-group">
-          <a className="list-group-item list-group-item-action" href="# ">Présentation</a>
-          <a className="list-group-item list-group-item-action " href="# ">Condition d'admission</a>
-          <a className="list-group-item list-group-item-action active-sublist" href="# ">Coodonées</a>
-          <a className="list-group-item list-group-item-action" href="# ">Nos poles</a>
-          <a className="list-group-item list-group-item-action" href="# ">Nos enseignants</a>
-          <a className="list-group-item list-group-item-action" href="# ">Nos options et débouché</a>
-        </div>
-      </NavbarCollapse>
+        <NavbarCollapse
+          trigger={mobileMenu.departement}
+        >
+          <div className="list-group">
+            <a className="list-group-item list-group-item-action" href="# ">Présentation</a>
+            <a className="list-group-item list-group-item-action " href="# ">Condition d'admission</a>
+            <a className="list-group-item list-group-item-action active-sublist" href="# ">Coodonées</a>
+            <a className="list-group-item list-group-item-action" href="# ">Nos poles</a>
+            <a className="list-group-item list-group-item-action" href="# ">Nos enseignants</a>
+            <a className="list-group-item list-group-item-action" href="# ">Nos options et débouché</a>
+          </div>
+        </NavbarCollapse>
 
-      <NavbarCollapse
-        trigger={mobileMenu.information}
-      >
-        <div className="list-group">
-          <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
-        </div>
-      </NavbarCollapse>
+        <NavbarCollapse
+          trigger={mobileMenu.information}
+        >
+          <div className="list-group">
+            <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
+          </div>
+        </NavbarCollapse>
 
-      <NavbarCollapse
-        trigger={mobileMenu.formation}
-      >
-        <div className="list-group">
-          <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
-        </div>
-      </NavbarCollapse>
+        <NavbarCollapse
+          trigger={mobileMenu.formation}
+        >
+          <div className="list-group">
+            <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
+          </div>
+        </NavbarCollapse>
 
-      <NavbarCollapse
-        trigger={mobileMenu.espaceEtudiant}
-      >
-        <div className="list-group">
-          <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
-        </div>
-      </NavbarCollapse>
+        <NavbarCollapse
+          trigger={mobileMenu.espaceEtudiant}
+        >
+          <div className="list-group">
+            <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
+          </div>
+        </NavbarCollapse>
 
-      <NavbarCollapse
-        trigger={mobileMenu.ancienEtudiant}
-      >
-        <div className="list-group">
-          <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
-        </div>
-      </NavbarCollapse>
+        <NavbarCollapse
+          trigger={mobileMenu.ancienEtudiant}
+        >
+          <div className="list-group">
+            <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
+          </div>
+        </NavbarCollapse>
 
-      <NavbarCollapse
-        trigger={mobileMenu.partenaires}
-      >
-        <div className="list-group">
-          <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
-        </div>
-      </NavbarCollapse>
+        <NavbarCollapse
+          trigger={mobileMenu.partenaires}
+        >
+          <div className="list-group">
+            <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
+          </div>
+        </NavbarCollapse>
 
-      <NavbarCollapse
-        trigger={mobileMenu.blog}
-      >
-        <div className="list-group">
-          <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
-        </div>
-      </NavbarCollapse>
+        <NavbarCollapse
+          trigger={mobileMenu.blog}
+        >
+          <div className="list-group">
+            <a className="list-group-item list-group-item-action " href="# ">Sous menu</a>
+          </div>
+        </NavbarCollapse>
+      </div>
+
+      <div className="uy1-link mt-5">
+        <a className="color-violet fst-italic text-decoration-none">Visite le site de UY1</a>
+      </div>
     </div>
   );
 }

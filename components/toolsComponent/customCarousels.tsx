@@ -11,19 +11,30 @@ export function AlertMessage() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} className="alert-important">
       <Carousel.Item>
-        <span>Delano</span>
+        <marquee>
+          <span>Delano</span>
+        </marquee>
       </Carousel.Item>
       <Carousel.Item>
-        <span>Roosvelt</span>
+        <marquee>
+          <span>Roosvelt</span>
+        </marquee>
+
       </Carousel.Item>
       <Carousel.Item>
-        <span>tydr</span>
+        <marquee>
+          <span>tydr</span>
+        </marquee>
       </Carousel.Item>
       <Carousel.Item>
-        <span>berlin pro</span>
+        <marquee>
+          <span>berlin pro</span>
+        </marquee>
       </Carousel.Item>
       <Carousel.Item>
-        <span>El professor</span>
+        <marquee>
+          <span>El professor</span>
+        </marquee>
       </Carousel.Item>
     </Carousel>
   );

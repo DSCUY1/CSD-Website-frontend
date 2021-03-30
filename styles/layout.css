@@ -269,8 +269,19 @@ div.col-sm {
     box-shadow: 0 3px 10px 2px grey;
 }
 
-.first-navbar {
-  /*margin: 10px 50px;*/
+.uy1-link {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 12px;
+  color: #6A4E77 !important;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-menu {
+  padding-bottom: -30px;
 }
 
 @media screen and (max-width: 993px) {
@@ -318,14 +329,24 @@ div.col-sm {
   .header-section-info {
     margin-right: 5px;
   }
+
+  .first-navbar {
+    margin: 10px !important;
+  }
 }
 
-/*@media screen and (max-width: 576px) {
-  .card {
-    width: 100%;
+@media screen and (max-width: 500px) {
+  .header-section-info a {
+    display: none;
   }
 
-  .card > .card-body {
-    justify-content: center;
+  .uy1-link {
+    display: block;
   }
-}*/
+
+  .header-section {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 0;
+  }
+}

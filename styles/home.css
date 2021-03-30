@@ -135,6 +135,11 @@
   justify-content: flex-start;
 }
 
+.contact-label:after {
+  content: " *";
+  color: red;
+}
+
 .hover {
     background-color: #6a4e77;
     border: none;
@@ -259,7 +264,12 @@
 }
 
 .event {
-  /*padding: 2px 0;*/
+  background-color: #f4f4f4;
+}
+
+li.event:hover {
+  background-color: #eee !important;
+  cursor: pointer;
 }
 
 .event p p {
@@ -269,7 +279,7 @@
   margin-bottom: 0;
 }
 
-.barbillard, .barbillard div.card, .list-info li.list-group-item {
+.barbillard, .barbillard div.card {
   background-color: #f4f4f4 !important;
 }
 
@@ -382,6 +392,11 @@
   border-left: 0;
 }
 
+.event-item:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
 .event-item-content span:first-child {
   font-weight: bold;
   font-family: "Roboto Bold";
@@ -408,6 +423,7 @@
   text-align: center;
   font-family: "Roboto Regular";
   font-weight: bold;
+  font-size: 14px;
 }
 
 .event-item p.card-text {
@@ -428,6 +444,22 @@
     min-height: 45px;
     padding-top: 10px;
     border: 2px solid transparent;
+}
+
+.btn_bar {
+  background-color: #AB608B;
+  border: 0;
+  color: #FFFFFF;
+  border-radius: 0;
+  font-size: 13px;
+  margin-left: 20px;
+  border: 2px solid transparent;
+}
+
+.btn_bar:hover {
+  border: 2px solid #AB608B;
+  background-color: white;
+  color: #AB608B;
 }
 
 .link_btn:hover {
@@ -468,6 +500,91 @@
 
 .image-interface {
   margin-right: 50px;
+}
+
+.color-violet {
+  color: #6a4e77;
+}
+
+.modal-form, .modal-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-form {
+  padding: 10px;
+}
+
+.modal-form input:focus {
+  outline: none;
+}
+
+.modal-title {
+  font-size: 18px !important;
+}
+
+.modal-body hr {
+  margin-top: 5px;
+}
+
+.modal-body {
+  padding: 0px;
+}
+
+.modal-footer button.btn {
+  background-color: #6a4e77;
+  border: 2px solid transparent;
+}
+
+.modal-footer button.btn:hover {
+  background-color: white;
+  color: #6A4E77;
+  border: 2px solid #6a4e77;
+}
+
+.modal-header {
+  padding: 5px 10px;
+  background-color: #6a4e77;
+  color: white;
+}
+
+.modal-header, .modal-body, .modal-footer {
+  border: 0;
+  border-radius: 0;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: 0;
+}
+
+.modal-date {
+  opacity: .7;
+  font-size: 13px;
+}
+
+.modal-header > .modal-title {
+  margin-right: 25px;
+}
+
+.modal-btn {
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modal-btn button {
+  width: 100px;
+}
+
+.close-modal {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.close-modal:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -573,5 +690,11 @@
 
   .image-interface {
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card_date {
+    width: 130px !important;
   }
 }
