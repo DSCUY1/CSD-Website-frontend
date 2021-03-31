@@ -9,24 +9,24 @@ export function AlertMessage() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} className="alert-important">
-      <Carousel.Item>
-        <span>Delano</span>
-      </Carousel.Item>
-      <Carousel.Item>
-        <span>Roosvelt</span>
+      <Carousel activeIndex={index} onSelect={handleSelect} className="alert-important">
+        <Carousel.Item>
+          <span>Delano</span>
+        </Carousel.Item>
+        <Carousel.Item>
+          <span>Roosvelt</span>
 
-      </Carousel.Item>
-      <Carousel.Item>
-        <span>tydr</span>
-      </Carousel.Item>
-      <Carousel.Item>
-        <span>berlin pro</span>
-      </Carousel.Item>
-      <Carousel.Item>
-        <span>El professor</span>
-      </Carousel.Item>
-    </Carousel>
+        </Carousel.Item>
+        <Carousel.Item>
+          <span>tydr</span>
+        </Carousel.Item>
+        <Carousel.Item>
+          <span>berlin pro</span>
+        </Carousel.Item>
+        <Carousel.Item>
+          <span>El professor</span>
+        </Carousel.Item>
+      </Carousel>
   );
 }
 

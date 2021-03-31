@@ -15,23 +15,53 @@ class Layout extends Component {
     super(props);
 
     this.state = {
-      toggleMenuMobile: ""
+      toggleMenuMobile: "",
+      heightPosition: ""
     }
   }
 
   componentDidMount() {
-    $(function() {
+    const setValue = (value = "") => {
+      this.setState({ heightPosition: value })
+    }
+
+    $(() => {
       let stickyElt = document.getElementById("navbar");
       let headerElt = document.getElementById("header-section");
+      let stickyElt2 = document.getElementById("alerts-important");
 
-      window.addEventListener("scroll", function () {
-          if (window.scrollY >= (stickyElt.offsetHeight + headerElt.offsetHeight - 30)) {
+      window.onscroll = () => {
+        if (window.scrollY >= (stickyElt.offsetHeight + headerElt.offsetHeight - 30)) {
           stickyElt.classList.add("sticky-decoration");
-      } else if (window.scrollY < (stickyElt.offsetHeight + headerElt.offsetHeight - 30)) {
+        } else if (window.scrollY < (stickyElt.offsetHeight + headerElt.offsetHeight - 30)) {
           stickyElt.classList.remove("sticky-decoration");
-          }
-      });
+        }
+
+        if (window.scrollY >= (stickyElt.offsetHeight + headerElt.offsetHeight + stickyElt2.offsetHeight - 30)) {
+          stickyElt2.classList.add("center-elt");
+          setValue(window.innerHeight-50);
+        } else if (window.scrollY < (stickyElt.offsetHeight + headerElt.offsetHeight + stickyElt2.offsetHeight - 30)) {
+          stickyElt2.classList.remove("center-elt");
+
+          if (window.innerWidth > 993)
+            setValue(70);
+          else
+            setValue(0);
+        }
+      };
+
+      window.onresize = () => {
+        if (window.scrollY >= (stickyElt.offsetHeight + headerElt.offsetHeight + stickyElt2.offsetHeight - 30)) {
+          setValue(window.innerHeight-50);
+        } else if (window.scrollY < (stickyElt.offsetHeight + headerElt.offsetHeight + stickyElt2.offsetHeight - 30)) {
+          if (window.innerWidth > 993)
+            setValue(70);
+          else
+            setValue(0);
+        }
+      }
     });
+
   }
 
   handleToggleMenuMobile = (className) => {
@@ -68,7 +98,9 @@ class Layout extends Component {
 
               <NavbarNavigation ToggleMenuMobile={this.handleToggleMenuMobile} />
 
-              <AlertMessage />
+              <div id="alerts-important" style={{ top: `${this.state.heightPosition}px` }}>
+                <AlertMessage />
+              </div>
 
               <div className="mainSection">
                 {this.props.children}

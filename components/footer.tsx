@@ -58,7 +58,7 @@ function Footer() {
       <div className="row">
         <div className="col-sm footer-info">
           <p className="d-flex text-light fs-12">Tous droits réservés © Université de Yaoundé I</p>
-          <div className="d-flex">
+          <div className="d-flex" style={{ justifyContent: "flex-end" }}>
               <p className="text-light fs-12">Designed & Developed by</p>
               <img src="/static/logo_dsc.png" style={{ height: "40px" }} alt="" />
           </div>

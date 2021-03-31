@@ -121,9 +121,15 @@ button.navbar-toggler {
     border-bottom-style: outset;
 }
 
-/*.alert-important {
-  margin-top: 62px;
-}*/
+#alerts-important {
+  position: sticky;
+  display: block;
+  top: 0;
+}
+
+.center-elt {
+  z-index: 3;
+}
 
 .alert-important > div.carousel-inner > div.carousel-item {
   height: 50px;
@@ -219,6 +225,7 @@ div.col-sm {
   justify-content: space-between;
   align-items: center;
   min-height: 60px;
+  margin-bottom: 50px;
   height: auto;
   background-color: #363232;
 }

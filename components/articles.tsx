@@ -3,9 +3,13 @@ import { BarbillardModal } from './toolsComponent/customModal';
 
 export function ArticleBarbillard({ barbillards }) {
   const [show, setShow] = useState(false);
+  const [idBar, setIdBar] = useState(1);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = (id) => {
+    setIdBar(id);
+    setShow(true);
+  }
 
   return (
     <>
@@ -16,7 +20,7 @@ export function ArticleBarbillard({ barbillards }) {
 
             {
               barbillards.map(bar => (
-                <li className="list-group-item event" onClick={handleShow} key={bar.id}>
+                <li className="list-group-item event" onClick={() => handleShow(bar.id)} key={bar.id}>
                   <p className="card-text">
                     <span>{ bar.date }</span><br/>
                     <small className="text-muted">{ bar.title }</small><br/>
@@ -34,7 +38,7 @@ export function ArticleBarbillard({ barbillards }) {
       <BarbillardModal
         show={show}
         setClose={handleClose}
-        barbillard={barbillards[1]}
+        barbillard={barbillards[idBar-1]}
       />
     </>
   );

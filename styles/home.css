@@ -44,6 +44,11 @@
   height: 90% !important;
 }
 
+/*.alert-important {
+  position: sticky;
+  top: 60;
+}*/
+
 .alert-important ol.carousel-indicators {
   position: absolute;
   z-index: 1;
@@ -481,6 +486,7 @@ li.event:hover {
 
 .articles div.article-important {
   padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .article {

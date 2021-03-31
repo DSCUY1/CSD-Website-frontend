@@ -35,7 +35,7 @@ export function BarbillardModal({ show, setClose, barbillard }) {
         <span className="close-modal" onClick={setClose}>&times;</span>
         <Modal.Title>
           <div className="modal-titre">
-            { barbillard.title }
+            { `${barbillard.title} ${barbillard.id}` }
           </div>
           <small className="modal-date" style={{ color: "white" }}>{ barbillard.date }</small>
         </Modal.Title>
