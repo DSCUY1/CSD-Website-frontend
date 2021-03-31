@@ -16,12 +16,12 @@ class Layout extends Component {
 
     this.state = {
       toggleMenuMobile: "",
-      heightPosition: ""
+      heightPosition: 0
     }
   }
 
   componentDidMount() {
-    const setValue = (value = "") => {
+    const setValue = (value = 0) => {
       this.setState({ heightPosition: value })
     }
 
