@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 
 function Evenement() {
   return (
-    <Layout title="evenements">
+    <Layout title="evenements" nav={{ mainMenu: "accueil", subMenu: "evenement" }}>
       evenements
     </Layout>
   );

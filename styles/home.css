@@ -332,6 +332,10 @@ li.event:hover {
   border: 0;
 }
 
+.links-body {
+  padding-bottom: 0;
+}
+
 .links-header h5 {
   font-size: calc(1.3rem + .6vw);
   font-family: "Roboto Regular";

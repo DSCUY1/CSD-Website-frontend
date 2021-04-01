@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 
 function Coordonnee() {
   return (
-    <Layout title="coordonnee">
+    <Layout title="coordonnee" nav={{ mainMenu: "departement", subMenu: "coordonnee" }}>
       coordonnee
     </Layout>
   );

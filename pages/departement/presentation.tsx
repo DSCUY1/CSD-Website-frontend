@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 
 function Presentation() {
   return (
-    <Layout title="presentation">
+    <Layout title="presentation" nav={{ mainMenu: "departement", subMenu: "presentation" }}>
       Presentation
     </Layout>
   );

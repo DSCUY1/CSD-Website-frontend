@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 
 function Poles() {
   return (
-    <Layout title="poles">
+    <Layout title="poles" nav={{ mainMenu: "departement", subMenu: "poles" }}>
       nos poles
     </Layout>
   );

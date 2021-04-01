@@ -1,5 +1,6 @@
 import React from 'react';
 import CustomCardFooter from './toolsComponent/customCardFooter';
+import Link from 'next/link';
 
 function Footer() {
   let header_card1 = <>
@@ -25,18 +26,18 @@ function Footer() {
               headerCard={header_card1}
               footerCard={footer_card1}
             >
-              <a href="#" className="text-decoration-none text-white">Présentation</a><br/>
-              <a href="#" className="text-decoration-none text-white">Conditions d'admission</a><br/>
-              <a href="#" className="text-decoration-none text-white">Nos pôles</a><br/>
-              <a href="#" className="text-decoration-none text-white">Nos enseignants</a><br/>
-              <a href="#" className="text-decoration-none text-white">Options & débouchés</a><br/>
+              <Link href="/departement/presentation"><a href="#" className="text-decoration-none text-white">Présentation</a></Link><br/>
+              <Link href="/departement/condition_admission"><a href="#" className="text-decoration-none text-white">Conditions d'admission</a></Link><br/>
+              <Link href="/departement/poles"><a href="#" className="text-decoration-none text-white">Nos pôles</a></Link><br/>
+              <Link href="/departement/enseignants"><a href="#" className="text-decoration-none text-white">Nos enseignants</a></Link><br/>
+              <Link href="/departement/options"><a href="#" className="text-decoration-none text-white">Options & débouchés</a></Link><br/>
             </CustomCardFooter>
 
             <CustomCardFooter
               headerCard={header_card2}
               footerCard={footer_card2}
             >
-              <a href="#" className="text-decoration-none text-white">Babillard</a><br/>
+              <Link href="/"><a href="#" className="text-decoration-none text-white">Babillard</a></Link><br/>
               <a href="#" className="text-decoration-none text-white">Espaces Etudiants</a><br/>
               <a href="#" className="text-decoration-none text-white">Anciens Etudiants</a><br/>
               <a href="#" className="text-decoration-none text-white">Nos partenaires</a><br/>

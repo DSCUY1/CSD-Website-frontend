@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 
 function Options() {
   return (
-    <Layout title="options et debouches">
+    <Layout title="options et debouches" nav={{ mainMenu: "departement", subMenu: "options" }}>
       options et debouches
     </Layout>
   );

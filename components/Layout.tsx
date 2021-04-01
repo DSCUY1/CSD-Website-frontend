@@ -14,61 +14,64 @@ class Layout extends Component {
   constructor(props) {
     super(props);
 
+    let nav = props.nav;
+    console.log(nav.mainMenu);
+
     this.state = {
       toggleMenuMobile: "",
       heightPosition: 0,
 
       navigation: {
         accueil: {
-          active: "",
+          active: nav.mainMenu === "accueil" ? "active":"",
           sousMenu: {
-            barbillard: "",
-            evenement: ""
+            barbillard: nav.subMenu === "barbillard" ? "active-sublist":"",
+            evenement: nav.subMenu === "evenement" ? "active-sublist":""
           }
         },
         departement: {
-          active: "",
+          active: nav.mainMenu === "departement" ? "active":"",
           sousMenu: {
-            presentation: "",
-            conditionAdmission: "",
-            coordonnee: "",
-            poles: "",
-            enseignant: "",
-            options: ""
+            presentation: nav.subMenu === "presentation" ? "active-sublist":"",
+            conditionAdmission: nav.subMenu === "conditionAdmission" ? "active-sublist":"",
+            coordonnee: nav.subMenu === "coordonnee" ? "active-sublist":"",
+            poles: nav.subMenu === "poles" ? "active-sublist":"",
+            enseignant: nav.subMenu === "enseignant" ? "active-sublist":"",
+            options: nav.subMenu === "options" ? "active-sublist":""
           }
         },
         information: {
-          active: "",
+          active: nav.mainMenu === "information" ? "active":"",
           sousMenu: {
             sousMenu: ""
           }
         },
         formation: {
-          active: "",
+          active: nav.mainMenu === "formation" ? "active":"",
           sousMenu: {
             sousMenu: ""
           }
         },
         espaceEtudiant: {
-          active: "",
+          active: nav.mainMenu === "espaceEtudiant" ? "active":"",
           sousMenu: {
             sousMenu: ""
           }
         },
         ancienEtudiant: {
-          active: "",
+          active: nav.mainMenu === "ancienEtudiant" ? "active":"",
           sousMenu: {
             sousMenu: ""
           }
         },
         nosPartenaires: {
-          active: "",
+          active: nav.mainMenu === "nosPartenaires" ? "active":"",
           sousMenu: {
             sousMenu: ""
           }
         },
         blog: {
-          active: "",
+          active: nav.mainMenu === "blog" ? "active":"",
           sousMenu: {
             sousMenu: ""
           }
@@ -76,26 +79,10 @@ class Layout extends Component {
       }
     }
 
-
+    console.log(this.state.navigation);
   }
 
   componentDidMount() {
-    let navigation = localStorage.getItem("navigation");
-    let obj;
-
-    console.log(navigation);
-
-    if (navigation) {
-      obj = JSON.parse(navigation);
-      console.log(obj);
-    } else {
-      const nav = { mainMenu: "accueil", subMenu: "barbillard" };
-      const json = JSON.stringify(nav);
-
-      localStorage.setItem("navigation", json);
-      obj = nav;
-    }
-
     const setValue = (value = 0) => {
       this.setState({ heightPosition: value })
     }
@@ -136,8 +123,6 @@ class Layout extends Component {
         }
       }
     });
-
-    this.handleNavigation(obj);
   }
 
   handleToggleMenuMobile = (className) => {
@@ -329,7 +314,12 @@ class Layout extends Component {
                 </div>
               </div>
 
-              <NavbarNavigation ToggleMenuMobile={this.handleToggleMenuMobile} />
+              <NavbarNavigation
+                ToggleMenuMobile={this.handleToggleMenuMobile}
+                navigation={this.state.navigation}
+                onNavigate={this.handleNavigation}
+                nav={this.props.nav}
+              />
 
               <div id="alerts-important" style={{ top: `${this.state.heightPosition}px` }}>
                 <AlertMessage />

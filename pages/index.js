@@ -5,6 +5,7 @@ import { ImportantImage } from '../components/toolsComponent/customCarousels';
 import { ArticleBarbillard, ArticleImportant } from '../components/articles';
 import UsefullLink from '../components/usefullLink';
 import Event from '../components/event';
+import Link from 'next/link';
 
 export default function Home() {
   const [events, setEvents] = useState([
@@ -37,7 +38,7 @@ export default function Home() {
     ]);
 
   return (
-    <Layout title="home">
+    <Layout title="home" nav={{ mainMenu: "accueil", subMenu: "barbillard" }}>
       <div className="container-fluid">
         <div className="row section-presentation">
           <div className="col">
@@ -64,7 +65,7 @@ export default function Home() {
                   </p>
 
                   <div className="pres_footer">
-                    <a href="#" className="btn hover">Conditions d'admission</a>
+                    <Link href="/departement/condition_admission"><a className="btn hover">Conditions d'admission</a></Link>
                     <a href="#" className="btn nohover">Nous Contacter</a>
                   </div>
                 </div>
@@ -130,7 +131,7 @@ export default function Home() {
               </div>
 
               <div className="card-footer events-footer">
-                <a href="#" className="btn link_btn events-btn" tabIndex={-1} role="button" aria-disabled="true">Tous nos évènements  <span>&rarr;</span></a>
+                <Link href="/evenements"><a className="btn link_btn events-btn" tabIndex={-1} role="button" aria-disabled="true">Tous nos évènements  <span>&rarr;</span></a></Link>
               </div>
             </div>
           </div>
