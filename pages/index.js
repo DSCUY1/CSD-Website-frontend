@@ -146,7 +146,7 @@ export default function Home() {
               <h2>Liste des articles</h2>
             </div>
           </div>
-          <div className="row">
+          <div className="row articles-important">
             <ArticleImportant />
             <ArticleImportant />
             <ArticleImportant />

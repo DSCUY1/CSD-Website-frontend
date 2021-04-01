@@ -483,9 +483,18 @@ li.event:hover {
   padding-left: 50px;
   padding-right: 50px;
 }
+/*
+.articles-important div. {
 
-.articles div.article-important {
+}*/
+
+.articles div.article-important:first-child {
   padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.articles div.article-important:not(:first-child) {
+  padding-left: 5 !important;
   padding-right: 0 !important;
 }
 
@@ -702,5 +711,16 @@ li.event:hover {
 @media screen and (max-width: 400px) {
   .card_date {
     width: 130px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .articles div.article-important:first-child {
+    padding-left: 0 !important;
+  }
+
+  .articles div.article-important {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }

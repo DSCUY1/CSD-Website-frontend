@@ -157,7 +157,7 @@ button.navbar-toggler {
   bottom: 0;
   background-color: white;
   border-right: 1px solid #eee;
-  z-index: 3;
+  z-index: 4;
   width: 250px;
   margin-left: -250px;
   transition: transform .4s ease;
@@ -183,6 +183,12 @@ button.navbar-toggler {
 
 .navbar-nav-mobile a.active-sublist {
   font-weight: bold;
+  font-family: "Roboto Bold";
+}
+
+.navbar-nav-mobile a.active-sublist:before {
+  content: "#  ";
+  text-align: right;
 }
 
 .navbar-nav-mobile a {
