@@ -66,7 +66,7 @@ function NavbarNavigation({ ToggleMenuMobile, navigation, onNavigate, nav }) {
         </button>
 
         <div className="navbar-nav" id="parent_menu">
-          <a className={`nav-link ${accueil.active}`} aria-current="page" href="#" onClick={() => handleNavigate("accueil")}>Acceuil</a>
+          <Link href="/"><a className={`nav-link ${accueil.active}`} aria-current="page" href="#" onClick={() => handleNavigate("accueil")}>Acceuil</a></Link>
           <a className={`nav-link ${departement.active}`} aria-current="page" href="#" onClick={() => handleNavigate("departement")}>Département</a>
           <a className={`nav-link ${information.active}`} aria-current="page" href="#">Informations</a>
           <a className={`nav-link ${formation.active}`} aria-current="page" href="#">Formation</a>
@@ -84,7 +84,7 @@ function NavbarNavigation({ ToggleMenuMobile, navigation, onNavigate, nav }) {
       <nav className="navbar-expand-lg navbar-light d-flex last-navbar">
         <div className="collapse navbar-collapse sub_menu d-flex flex-column align-items-start" id="navbarNavAltMarkup ">
           <div className={`navbar-nav ${navigate.accueil}`} id="home">
-            <Link href="/"><a className={`nav-link ${accueil.sousMenu.barbillard.substr(0, 6)}`} aria-current="page" onClick={() => onNavigate({MainMenu: "accueil", subMenu: "barbillard"})}>Barbillard</a></Link>
+            <Link href="/barbillard"><a className={`nav-link ${accueil.sousMenu.barbillard.substr(0, 6)}`} aria-current="page" onClick={() => onNavigate({MainMenu: "accueil", subMenu: "barbillard"})}>Barbillard</a></Link>
             <Link href="/evenements"><a className={`nav-link ${accueil.sousMenu.evenement.substr(0, 6)}`} aria-current="page" onClick={() => onNavigate({MainMenu: "accueil", subMenu: "evenement"})}>Evenements</a></Link>
           </div>
           <div className={`navbar-nav ${navigate.departement}`} id="departement">

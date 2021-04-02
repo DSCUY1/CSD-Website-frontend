@@ -7,7 +7,7 @@ function NavbarNavigationMobile({ navigation, onNavigate }) {
   const { accueil, departement, information, formation, espaceEtudiant, ancienEtudiant, nosPartenaires, blog } = navigation;
 
   let mobileMenu = {
-    accueil: <a className={`list-group-item list-group-item-action ${accueil.active}`} href="#">Acceuil</a>,
+    accueil: <Link href="/"><a className={`list-group-item list-group-item-action ${accueil.active}`} href="#">Acceuil</a></Link>,
     departement: <a className={`list-group-item list-group-item-action ${departement.active}`} href="#">Departement</a>,
     information: <a className={`list-group-item list-group-item-action ${information.active}`} href="#">Informations</a>,
     formation: <a className={`list-group-item list-group-item-action ${formation.active}`} href="#">Formation</a>,
@@ -24,7 +24,7 @@ function NavbarNavigationMobile({ navigation, onNavigate }) {
           trigger={mobileMenu.accueil}
         >
           <div className="list-group">
-            <Link href="/"><a className={`list-group-item list-group-item-action ${accueil.sousMenu.barbillard}`} href="# " onClick={() => onNavigate({ MainMenu: "accueil", subMenu: "barbillard" })}>Barbillard</a></Link>
+            <Link href="/barbillard"><a className={`list-group-item list-group-item-action ${accueil.sousMenu.barbillard}`} href="# " onClick={() => onNavigate({ MainMenu: "accueil", subMenu: "barbillard" })}>Barbillard</a></Link>
             <Link href="/evenements"><a className={`list-group-item list-group-item-action ${accueil.sousMenu.evenement}`} href="# " onClick={() => onNavigate({ MainMenu: "accueil", subMenu: "evenement" })}>Evenements</a></Link>
           </div>
         </NavbarCollapse>

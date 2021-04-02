@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../font/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
+.header-accueil {
+  width: 100%;
+}
+
+#barbillards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 50px !important;
+  height: 150px;
+  background-color: white;
+  box-shadow: 1px 2px 3px lightgrey;
+  line-height: 25px;
+  color: #6a4e77;
+}
+
+.barbillard-item {
+  margin-top: 20px !important;
+}
+
+.barbillards-items {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px !important;
+  margin-top: 0px !important;
+}
+
+.barbillard-item--image {
+  display: flex;
+  width: 130px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.barbillard-item--content {
+  display: flex;
+  flex: 7;
+}
+
+.barbillard-item div.card {
+  background-color: white !important;
+}
+
+.barbillard-item div.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.barbillard-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 80px;
+}
+
+.barbillard-element--date {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.barbillard-element--title {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #6a4e77;
+  margin-top: 7px;
+}
+
+.barbillard-element--content {
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.barbillard-element--viewmore {
+  display: flex;
+  margin-top: auto;
+  font-size: 12px;
+  color: #AB608B;
+  cursor: pointer;
+}
+
+#barbillards > span:first-child {
+  font-size: 14px;
+  font-family: "Roboto regular";
+  font-weight: bold;
+}
+
+#barbillards > span:last-child {
+  font-size: 30px;
+  font-family: "Roboto Bold";
+}
+
+.pagination-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-next {
+  margin-left: 10px;
+  align-self: center;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.page-item {
+  border-radius: 0px !important;
+}
+
+.pagination li:not(li.active) > a.page-link:hover {
+  color: #6A4E77 !important;
+}
+
+.page-link {
+  color: #6A4E77;
+}
+
+.pagination li > a.page-link:first-child {
+  border-radius: 0px;
+}
+
+.pagination li.active > a.page-link {
+  background-color: #6A4E77;
+  border: 1px solid transparent;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  #barbillards {
+    padding: 15px 10px !important;
+  }
+
+  .barbillards-items {
+    padding: 15px 10px !important;
+  }
+}

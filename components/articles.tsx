@@ -52,11 +52,36 @@ export function ArticleImportant() {
         <div className="card-body font-small article-body">
           <p className="card-title pb-3 color-violet fs-15">Comment Shikamaru Nara arrive à gagner les combats sans être fort physiquement?</p>
           <small className="text-muted"><i>Mars 2021</i></small>
-          <p className="card-text pt-2 text-muted">Masashi Kishimoto a révélé qu’il aimait beaucoup Shikamaru en raison de sa nature facile à vivre en dépit de son génie, et contrastée à contrario de la personnalité intelligente mais agressive de Sasuke Uchiwa. L’auteur a fait
-            remarquer qu’il épouserait Shikamaru s’il était une fille, notant que Shikamaru serait susceptible de réussir dans la vie. Lors de la conception de Shikamaru dans la seconde partie, Kishimoto a voulu donner une apparence unique
-            à son personnage, malgré le gilet que portent tous les ninjas confirmés.</p>
+          <p className="card-text pt-2 text-muted fs-12">Masashi Kishimoto a révélé qu’il aimait beaucoup Shikamaru en raison de sa nature facile à vivre en dépit de son génie, et contrastée à contrario de la personnalité intelligente mais agressive de Sasuke Uchiwa...</p>
 
           <a className="btn btn-link text-decoration-none">Lire</a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function BarbillardItem() {
+  return (
+    <div className="col barbillard-item">
+      <div className="card w-100">
+        <div className="card-body">
+          <div className="barbillard-item--content">
+            <div className="barbillard-element">
+              <div className="barbillard-element--date">11 mars 2021</div>
+              <div className="barbillard-element--title">Seminaire sur la securite informatique</div>
+              <div className="barbillard-element--content text-muted">
+                il sera organisé le 12 avril un séminaire sur la cybersecurite au Déppartement sur le thème : Cyber-attaque et Cyber-defense
+              </div>
+              <div className="barbillard-element--viewmore">
+                &gt; voir plus
+              </div>
+            </div>
+          </div>
+          <div className="barbillard-item--image">
+            <img src="/static/home.png" alt="" style={{ width: "100%", height: "150px" }} />
+          </div>
+          <hr />
         </div>
       </div>
     </div>

@@ -49,6 +49,10 @@
   top: 60;
 }*/
 
+.img-card-size {
+  height: 150px;
+}
+
 .alert-important ol.carousel-indicators {
   position: absolute;
   z-index: 1;
@@ -182,7 +186,7 @@
 
 .programmes div.card {
   background-color: white !important;
-  padding: 20px  0;
+  padding: 10px  0;
   width: 90%;
   padding-left: 50px;
 }
@@ -200,8 +204,13 @@
 
 .programmes-header h5, .list-info h5 {
   border-left: 7px solid #DE3A99;
-  font-size: 35px;
+  font-size: 24px !important;
   padding-left: 20px;
+}
+
+.programmes-header h5 {
+  padding-top: 0px !important;
+  font-family: "Roboto Bold";
 }
 
 .programmes-header p {
@@ -292,6 +301,7 @@ li.event:hover {
   width: 90%;
   margin-left: auto;
   margin-right: 50px;
+  padding-top: 10px;
 }
 
 .barbillard div.card div.card-body {
