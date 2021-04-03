@@ -497,10 +497,6 @@ li.event:hover {
   padding-left: 50px;
   padding-right: 50px;
 }
-/*
-.articles-important div. {
-
-}*/
 
 .articles div.article-important:first-child {
   padding-left: 0 !important;

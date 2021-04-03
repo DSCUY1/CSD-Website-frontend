@@ -87,3 +87,43 @@ export function BarbillardItem() {
     </div>
   );
 }
+
+export function EvenementItem() {
+  return (
+    <div className="row">
+      <div className="col">
+        <div className="card evenement-item w-100">
+          <div className="card-body">
+            <div className="evenement-item--image">
+              <img src="/static/home.png" className="img-card-top" style={{ height: "150px", width: "100%" }} alt="image" />
+              <div className="evenement-item--date">
+                <span>29</span>
+                <span>AVRIL</span>
+              </div>
+            </div>
+            <div className="evenement-item--content">
+              <div className="card-title">
+                <div className="evenement-item--title">
+                  Demystifier le Machine Learning
+                </div>
+                <div className="evenement-item--content-message text-muted">
+                  Blablablablabla klajf aldkja s;ldkjf a;sldkjf a;sdlkfj a;sdfkajd f;adfkja sd;fakjsdf as;dlkfja sdf;askdjf as;dklfj
+                </div>
+                <span className="evenement-item--viewmore mt-1">&gt; voir plus</span>
+              </div>
+            </div>
+            <div className="evenement-item--footer">
+              <div className="evenement-item--author">
+                Par: Dr Laurent Broto
+              </div>
+              <div className="evenement-item--location">
+                <span>Departement d'informatique</span>
+                <span>29/04/2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

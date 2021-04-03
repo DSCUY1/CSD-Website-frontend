@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import { BarbillardItem } from '../components/articles';
 import EventLink from '../components/eventLink';
+import { Pagination } from '../components/toolsComponent/customPagination';
 
 function Barbillard() {
   const [events, setEvents] = useState([
@@ -27,20 +28,7 @@ function Barbillard() {
           <BarbillardItem />
           <BarbillardItem />
 
-          <div className="col pagination-section">
-            <nav aria-label="Page navigation example">
-              <ul className="pagination">
-                <li className="page-item active"><a className="page-link" href="#">1</a></li>
-                <li className="page-item"><a className="page-link" href="#">2</a></li>
-                <li className="page-item"><a className="page-link" href="#">3</a></li>
-                <li className="page-item"><a className="page-link" href="#">4</a></li>
-                <li className="page-item"><a className="page-link" href="#">5</a></li>
-                <li className="page-item page-next">
-                  <span aria-hidden="true" className="text-muted">&gt;</span>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <Pagination />
         </div>
 
         <EventLink events={events} />

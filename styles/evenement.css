@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../font/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
+.evenement-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.evenement-item {
+  background-color: white !important;
+  box-shadow: 0px 2px 3px lightgrey;
+  margin-bottom: 20px;
+}
+
+.evenement-barbillard {
+  padding-left: 65px;
+}
+
+.evenement-item > div.card-body {
+  padding: 0;
+}
+
+.evenement-item--image {
+  position: relative;
+  padding: 0;
+}
+
+.evenement-item--content {
+  padding: 10px;
+}
+
+.evenement-item--date {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #AB608B;
+  color: white;
+  line-height: 20px;
+}
+
+.evenement-item--title {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #6a4e77;
+}
+
+.evenement-item--content-message {
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.evenement-item--viewmore {
+  display: flex;
+  margin-top: auto;
+  font-size: 12px;
+  color: #AB608B;
+  cursor: pointer;
+}
+
+.evenement-item--footer {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.evenement-item--author {
+  color: #AB608B;
+  font-size: 13px;
+  font-family: "Roboto Regular";
+}
+
+.evenement-item--location {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #6a4e77;
+}
+
+.evenement-item--location span:last-child {
+  margin-left: 10px;
+}
+
+.evenement-item--date > span:first-child {
+  font-size: 25px;
+  font-family: "Roboto Bold";
+}
+
+.evenement-item--date > span:last-child {
+  font-size: 12px;
+  font-family: "Roboto Regular";
+}
+
+@media screen and (max-width: 800px) {
+  .evenement-container {
+    padding: 15px 10px;
+  }
+
+  .evenement-barbillard {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .evenement-barbillard {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
