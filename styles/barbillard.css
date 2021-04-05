@@ -138,6 +138,11 @@
   z-index: 1;
 }
 
+.barbi > div:last-child {
+  background-color: white;
+  margin-top: 18px;
+}
+
 @media screen and (max-width: 767px) {
   #barbillards {
     padding: 15px 10px !important;
@@ -158,6 +163,15 @@
   .barbillard-item div.card-body {
     padding: 20px 10px;
   }
+
+  .barbi {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .barbi > div:last-child {
+    min-height: 150px;
+  }
 }
 
 @media screen and (max-width: 466px) {
@@ -177,4 +191,8 @@
     margin-top: 110px;
     padding-right: 0px;
   }
+}
+
+@media screen and (max-width: 576px) {
+
 }

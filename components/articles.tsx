@@ -91,11 +91,11 @@ export function BarbillardItem() {
 export function EvenementItem() {
   return (
     <div className="row">
-      <div className="col">
-        <div className="card evenement-item w-100">
+      <div className="col d-flex">
+        <div className="card evenement-item">
           <div className="card-body">
             <div className="evenement-item--image">
-              <img src="/static/home.png" className="img-card-top" style={{ height: "150px", width: "100%" }} alt="image" />
+              <img src="/static/home.png" className="img-card-top" style={{ height: "200px", width: "100%" }} alt="image" />
               <div className="evenement-item--date">
                 <span>29</span>
                 <span>AVRIL</span>

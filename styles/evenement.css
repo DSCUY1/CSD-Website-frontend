@@ -15,10 +15,20 @@
   padding-bottom: 0;
 }
 
+.evenement-container > div.evenement-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.evenement-container  div.evenement-section:last-child  div.evenement-item {
+  margin-left: auto;
+}
+
 .evenement-item {
   background-color: white !important;
   box-shadow: 0px 2px 3px lightgrey;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .evenement-barbillard {
@@ -46,8 +56,8 @@
   align-items: center;
   bottom: 0;
   left: 0;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   background-color: #AB608B;
   color: white;
   line-height: 20px;
@@ -95,12 +105,12 @@
 }
 
 .evenement-item--date > span:first-child {
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Roboto Bold";
 }
 
 .evenement-item--date > span:last-child {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Roboto Regular";
 }
 

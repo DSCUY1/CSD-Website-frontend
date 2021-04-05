@@ -37,11 +37,15 @@ function Evenement() {
         </div>
 
         <div className="row evenement-container">
-          <div className="col-md-6 col-sm-6 evenement-section">
+          <div className="col-md-4 col-sm-6 evenement-section">
             <EvenementItem />
             <EvenementItem />
           </div>
-          <div className="col-md-6 col-sm-6 evenement-section">
+          <div className="col-md-4 col-sm-6 evenement-section">
+            <EvenementItem />
+            <EvenementItem />
+          </div>
+          <div className="col-md-4 col-sm-6 evenement-section">
             <EvenementItem />
             <EvenementItem />
           </div>

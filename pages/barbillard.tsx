@@ -24,9 +24,18 @@ function Barbillard() {
         </div>
 
         <div className="row mt-5 barbillards-items">
-          <BarbillardItem />
-          <BarbillardItem />
-          <BarbillardItem />
+          <div className="col">
+            <div className="row barbi">
+              <div className="col-md-9 col-sm-12">
+                <BarbillardItem />
+                <BarbillardItem />
+                <BarbillardItem />
+              </div>
+              <div className="col-md-3 col-sm-12">
+                zone de filtre
+              </div>
+            </div>
+          </div>
 
           <Pagination />
         </div>

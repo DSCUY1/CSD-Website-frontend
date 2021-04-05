@@ -67,7 +67,7 @@ function NavbarNavigation({ ToggleMenuMobile, navigation, onNavigate, nav }) {
 
         <div className="navbar-nav" id="parent_menu">
           <Link href="/"><a className={`nav-link ${accueil.active}`} aria-current="page" href="#" onClick={() => handleNavigate("accueil")}>Acceuil</a></Link>
-          <a className={`nav-link ${departement.active}`} aria-current="page" href="#" onClick={() => handleNavigate("departement")}>Département</a>
+          <Link href="/departement/presentation"><a className={`nav-link ${departement.active}`} aria-current="page" href="#" onClick={() => handleNavigate("departement")}>Département</a></Link>
           <a className={`nav-link ${information.active}`} aria-current="page" href="#">Informations</a>
           <a className={`nav-link ${formation.active}`} aria-current="page" href="#">Formation</a>
           <a className={`nav-link ${espaceEtudiant.active}`} aria-current="page" href="#">Espace Etudiants</a>
