@@ -64,7 +64,7 @@ export function ArticleImportant() {
 export function BarbillardItem() {
   return (
     <div className="col barbillard-item">
-      <div className="card w-100">
+      <div className="card w-100 border-0">
         <div className="card-body">
           <div className="barbillard-item--content">
             <div className="barbillard-element">

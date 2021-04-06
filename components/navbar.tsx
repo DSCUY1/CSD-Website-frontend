@@ -66,14 +66,14 @@ function NavbarNavigation({ ToggleMenuMobile, navigation, onNavigate, nav }) {
         </button>
 
         <div className="navbar-nav" id="parent_menu">
-          <Link href="/"><a className={`nav-link ${accueil.active}`} aria-current="page" href="#" onClick={() => handleNavigate("accueil")}>Acceuil</a></Link>
-          <Link href="/departement/presentation"><a className={`nav-link ${departement.active}`} aria-current="page" href="#" onClick={() => handleNavigate("departement")}>Département</a></Link>
-          <a className={`nav-link ${information.active}`} aria-current="page" href="#">Informations</a>
-          <a className={`nav-link ${formation.active}`} aria-current="page" href="#">Formation</a>
-          <a className={`nav-link ${espaceEtudiant.active}`} aria-current="page" href="#">Espace Etudiants</a>
-          <a className={`nav-link ${ancienEtudiant.active}`} aria-current="page" href="#">Ancien Etudiants</a>
-          <a className={`nav-link ${nosPartenaires.active}`} aria-current="page" href="#">Nos Partenaires</a>
-          <a className={`nav-link ${blog.active}`} aria-current="page" href="#">Blog</a>
+          <Link href="/"><a className={`nav-link main-navbar ${accueil.active}`} aria-current="page" href="#" onClick={() => handleNavigate("accueil")}>Acceuil</a></Link>
+          <Link href="/departement/presentation"><a className={`nav-link main-navbar ${departement.active}`} aria-current="page" href="#" onClick={() => handleNavigate("departement")}>Département</a></Link>
+          <a className={`nav-link main-navbar ${information.active}`} aria-current="page" href="#">Informations</a>
+          <a className={`nav-link main-navbar ${formation.active}`} aria-current="page" href="#">Formation</a>
+          <a className={`nav-link main-navbar ${espaceEtudiant.active}`} aria-current="page" href="#">Espace Etudiants</a>
+          <a className={`nav-link main-navbar ${ancienEtudiant.active}`} aria-current="page" href="#">Ancien Etudiants</a>
+          <a className={`nav-link main-navbar ${nosPartenaires.active}`} aria-current="page" href="#">Nos Partenaires</a>
+          <a className={`nav-link main-navbar ${blog.active}`} aria-current="page" href="#">Blog</a>
         </div>
 
         <form className="d-flex form-search">

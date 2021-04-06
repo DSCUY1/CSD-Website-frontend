@@ -83,6 +83,7 @@ body {
 }
 
 .navbar-nav a {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,6 +120,15 @@ button.navbar-toggler {
 .navbar-nav a.active {
     border-bottom: 2px solid #000000;
     border-bottom-style: outset;
+}
+
+.navbar-nav a.main-navbar.active:after {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+  content: "v";
+  width: 2px !important;
+  height: 2px !important;
 }
 
 #alerts-important {
