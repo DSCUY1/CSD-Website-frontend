@@ -191,6 +191,14 @@ button.navbar-toggler {
   background-color: #484a52;
 }
 
+.navbar-nav-mobile a.active:after {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  content: ">";
+  font-size: 16px;
+}
+
 .navbar-nav-mobile a.active-sublist {
   font-weight: bold;
   font-family: "Roboto Bold";
