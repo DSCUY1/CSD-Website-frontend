@@ -62,6 +62,9 @@ export function ArticleImportant() {
 }
 
 export function BarbillardItem() {
+  const [viewmore, setViewmore] = useState(false);
+
+  let content = "il sera organisé le 12 avril un séminaire sur la cybersecurite au Déppartement sur le thème : Cyber-attaque et Cyber-defense. Nous vous prions de venir participer a cet evenement, nous vous presenterons tout ce qui aura un rapport avec la cyber securite";
   return (
     <div className="col barbillard-item">
       <div className="card w-100 border-0">
@@ -71,11 +74,21 @@ export function BarbillardItem() {
               <div className="barbillard-element--date">11 mars 2021</div>
               <div className="barbillard-element--title">Seminaire sur la securite informatique</div>
               <div className="barbillard-element--content text-muted">
-                il sera organisé le 12 avril un séminaire sur la cybersecurite au Déppartement sur le thème : Cyber-attaque et Cyber-defense
+                {
+                  content.length < 100 ? content : (
+                    !viewmore ? content.substr(0, 100) + "..." : content
+                  )
+                }
               </div>
-              <div className="barbillard-element--viewmore">
-                &gt; voir plus
-              </div>
+              {
+                content.length > 100 ? (
+                  !viewmore && (
+                    <div className="barbillard-element--viewmore" onClick={() => setViewmore(!viewmore)}>
+                      &gt; voir plus
+                    </div>
+                  )
+                ): null
+              }
             </div>
           </div>
           <div className="barbillard-item--image">
