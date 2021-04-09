@@ -31,8 +31,17 @@ function Barbillard() {
                 <BarbillardItem />
                 <BarbillardItem />
               </div>
-              <div className="col-md-3 col-sm-12">
-                zone de filtre
+              <div className="col-md-3 col-sm-12 p-0">
+                <div className="card w-100 h-100 barbillard-filtre">
+                  <div className="barbillard-filtre-search">
+                    <select defaultValue="f3" name="filtre" id="" className="form-control p-1 m-2" style={{ width: "95%" }}>
+                      <option value="f1">aucun</option>
+                      <option value="f2">notes</option>
+                      <option value="f3">communique</option>
+                    </select>
+                  </div>
+                  <hr className="m-0"/>
+                </div>
               </div>
             </div>
           </div>

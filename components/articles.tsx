@@ -88,7 +88,9 @@ export function BarbillardItem() {
   );
 }
 
-export function EvenementItem() {
+export function EvenementItem({ children }) {
+  const [viewmore, setViewmore] = useState(false);
+
   return (
     <div className="row">
       <div className="col d-flex">
@@ -107,9 +109,16 @@ export function EvenementItem() {
                   Demystifier le Machine Learning
                 </div>
                 <div className="evenement-item--content-message text-muted">
-                  Blablablablabla klajf aldkja s;ldkjf a;sldkjf a;sdlkfj a;sdfkajd f;adfkja sd;fakjsdf as;dlkfja sdf;askdjf as;dklfj
+                  { children.length < 100 ? children : (
+                      !viewmore ? children.substr(0, 100) + "..." : children
+                    )
+                  }
                 </div>
-                <span className="evenement-item--viewmore mt-1">&gt; voir plus</span>
+                {
+                  (children.length > 100) ? (
+                    !viewmore && <span className="evenement-item--viewmore mt-1" onClick={() => setViewmore(!viewmore)}>&gt; voir plus</span>
+                  ) : null
+                }
               </div>
             </div>
             <div className="evenement-item--footer">

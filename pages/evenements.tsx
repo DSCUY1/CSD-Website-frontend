@@ -38,16 +38,23 @@ function Evenement() {
 
         <div className="row evenement-container">
           <div className="col-md-4 col-sm-6 evenement-section">
-            <EvenementItem />
-            <EvenementItem />
+            <EvenementItem>
+              je tiens a vous rappeler que le nous allons organiser un evenement qui porteras sur le developpement web. Durant cet evenement nous parlerons du html, css, javascript et bien d'autre chose. Je vous prie d'assister a cet evenement.
+            </EvenementItem>
+            <EvenementItem>
+              je tiens a vous rappeler que le nous allons organiser un evenement qui porteras sur le developpement web. Durant cet evenement nous parlerons du html, css, javascript et bien d'autre chose. Je vous prie d'assister a cet evenement.</EvenementItem>
           </div>
           <div className="col-md-4 col-sm-6 evenement-section">
-            <EvenementItem />
-            <EvenementItem />
+            <EvenementItem>
+              je tiens a vous rappeler que le nous allons organiser un evenement qui porteras sur le developpement web. Durant cet evenement nous parlerons du html, css, javascript et bien d'autre chose. Je vous prie d'assister a cet evenement.</EvenementItem>
+            <EvenementItem>
+              je tiens a vous rappeler que le nous allons organiser un evenement qui porteras sur le developpement web. Durant cet evenement nous parlerons du html, css, javascript et bien d'autre chose. Je vous prie d'assister a cet evenement.</EvenementItem>
           </div>
           <div className="col-md-4 col-sm-6 evenement-section">
-            <EvenementItem />
-            <EvenementItem />
+            <EvenementItem>
+              je tiens a vous rappeler que le nous allons organiser un evenement qui porteras sur le developpement web. Durant cet evenement nous parlerons du html, css, javascript et bien d'autre chose. Je vous prie d'assister a cet evenement.</EvenementItem>
+            <EvenementItem>
+              je tiens a vous rappeler que le nous allons organiser un evenement qui porteras sur le developpement web. Durant cet evenement nous parlerons du html, css, javascript et bien d'autre chose. Je vous prie d'assister a cet evenement.</EvenementItem>
           </div>
         </div>
 
