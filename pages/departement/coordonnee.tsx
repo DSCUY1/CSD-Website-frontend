@@ -44,8 +44,8 @@ function Coordonnee() {
           </div>
         </div>
 
-        <div className="row m-0 p-0">
-          <div className="col-sm-5 col-md-5 coordonneeSectionLeft">
+        <div className="row m-0 p-0 coordonneeSection">
+          <div className="col-md-5 coordonneeSectionLeft">
             <div className="row">
               <div className="col-md-12 barbillard coordonnee-bar mb-2">
                 <ArticleBarbillard barbillards={barbillards} />
@@ -72,7 +72,7 @@ function Coordonnee() {
             </div>
           </div>
 
-          <div className="col-sm-7 col-md-7 mb-2 coordonneeSectionRight">
+          <div className="col-md-7 mb-2 coordonneeSectionRight">
             <div className="coordonnee-top">
               <div className="coordonnee-title text-muted">
                 Le secrétariat du Département d'informatique et les bureaux sont situés à l'extension n° 1 de la Faculté des Sciences de l'Université de Yaoundé I.
