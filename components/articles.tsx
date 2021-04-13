@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { BarbillardModal } from './toolsComponent/customModal';
+import Link from 'next/link';
 
 export function ArticleBarbillard({ barbillards }) {
   const [show, setShow] = useState(false);
@@ -30,7 +31,7 @@ export function ArticleBarbillard({ barbillards }) {
               ))
             }
           </ul>
-          <a href="#" className="btn btn_bar btn-lg" tabIndex={-1} role="button" aria-disabled="true">Liste de tous les articles  <span>&rarr;</span></a>
+          <Link href="/barbillard"><a className="btn btn_bar btn-lg" tabIndex={-1} role="button" aria-disabled="true">Liste de tous les articles  <span>&rarr;</span></a></Link>
           <div className="border_communicate"></div>
         </div>
       </div>

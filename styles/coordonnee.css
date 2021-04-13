@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../font/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../font/Roboto/Roboto-Medium.ttf");
+}
+
+.coordonneeSectionLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 50px;
+  padding-right: 10px;
+  padding-top: 30px;
+}
+
+.coordonneeSectionRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 50px;
+  background-color: white;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.coordonnee-bar > div.card {
+  margin-right: 10px !important;
+  width: 100%;
+}
+
+.coordonnee-events > div.card {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px !important;
+  margin-bottom: 0 !important;
+}
+
+.coordonnee-title {
+  margin-top: 20px;
+  font-family: "Roboto Regular";
+  font-size: 14px;
+}
+
+.coordonnee-info {
+  margin-top: 20px;
+  font-family: "Roboto Medium";
+}
+
+.coordonnee-info--bottom {
+  margin-top: 20px;
+}
+
+.coordonnee-info--top,
+.coordonnee-info--bottom,
+.coordonnee-item--content {
+  font-size: 14px;
+  font-family: "Roboto Regular";
+}
+
+.coordonnee-hr {
+  margin: 10px 0px;
+  height: .4px;
+  color: #f4f4f4;
+}
+
+.coordonnee-item h4 {
+  margin: 10px 0;
+}
+
+.coordonnee-item--content {
+  margin-bottom: 20px;
+}
+
+.coordonnee-bottom {
+  margin-top: 10px;
+}
