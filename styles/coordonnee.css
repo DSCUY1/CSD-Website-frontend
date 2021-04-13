@@ -84,8 +84,17 @@
   margin-top: 10px;
 }
 
+#barbillards span.entete {
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .coordonneeSectionLeft {
     padding-left: 10px;
+  }
+
+  .coordonneeSection {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }

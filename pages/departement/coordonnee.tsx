@@ -40,7 +40,7 @@ function Coordonnee() {
         <div className="row">
           <div className="col" id="barbillards"  style={{ color: "white", background: "#6A4E77B0" }}>
             <span>Département d'informatique</span>
-            <span>Coordonnées du Département</span>
+            <span className="entete">Coordonnées du Département</span>
           </div>
         </div>
 
