@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../font/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
+.chef-word--title {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 3px 5px lightgrey;
+  margin-bottom: 10px;
+}
+
+.chef-word {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#chef-card {
+  width: 100%;
+  box-shadow: 0px 3px 8px lightgrey;
+  align-self: center;
+}
+
+#chef-card,
+#chef-card div.card-body {
+  border: 0;
+  background-color: white !important;
+}
+
+#chef-card div.card-body {
+  padding: 15px;
+}
+
+.chef-card--header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.chef-card--info {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.chef-card--info span:first-child {
+  font-size: 14px;
+  font-family: "Roboto Bold";
+}
+
+.chef-card--info span:last-child {
+  font-size: 13px;
+  font-family: "Roboto regular";
+}
+
+.chef-card--header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.section-lists-photo {
+  margin-top: 30px;
+  background-color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .chef-word {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #chef-card {
+    width: 100% !important;
+  }
+}
