@@ -14,7 +14,7 @@ export function ArticleBarbillard({ barbillards }) {
 
   return (
     <>
-      <div className="card" style={{ height: "100%" }}>
+      <div className="card card-barbillard" style={{ height: "100%" }}>
         <div className="card-body">
           <ul className="list-info">
             <h5 className="card-title">Babillard</h5>

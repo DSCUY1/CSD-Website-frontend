@@ -81,6 +81,22 @@
   padding: 10px;
 }
 
+.list-photo--main {
+  display: block;
+  padding: 10px 50px;
+}
+
+.list-photo--main > .list-item {
+  width: 200px;
+}
+
+.list-photo--header {
+  margin-left: 50px;
+  font-size: 18px;
+  font-family: "Roboto Regular";
+  color: #6a4e77;
+}
+
 @media screen and (max-width: 767px) {
   .chef-word {
     width: 100%;
@@ -90,5 +106,13 @@
 
   #chef-card {
     width: 100% !important;
+  }
+
+  .list-photo--main {
+    padding: 10px 15px;
+  }
+
+  .list-photo--header {
+    margin-left: 30px;
   }
 }

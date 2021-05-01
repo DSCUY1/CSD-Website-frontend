@@ -669,6 +669,10 @@ li.event:hover {
     margin-left: 10px;
   }
 
+  .links {
+    margin-top: 20px;
+  }
+
   .links div.card {
     padding-right: 10px;
   }
@@ -704,6 +708,10 @@ li.event:hover {
     width: 100%;
   }
 
+  .links div.card-body {
+    padding-bottom: 20px;
+  }
+
   .event-header {
     margin-left: 15px !important;
   }
@@ -715,6 +723,10 @@ li.event:hover {
 
   .image-interface {
     margin-right: 0px;
+  }
+
+  .card-barbillard {
+    margin-bottom: 20px;
   }
 }
 

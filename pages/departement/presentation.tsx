@@ -1,9 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Layout from '../../components/Layout';
 import Link from 'next/link';
 import { ImportantImage } from '../../components/toolsComponent/customCarousels';
+import { ArticleBarbillard } from '../../components/articles';
+import UsefullLink from "../../components/usefullLink";
 
 function Presentation() {
+  const [barbillards, setBarbillards] = useState([
+      {
+        id: 1,
+        date: "12 mars 2021",
+        content: "il sera organisé le 12 avril un séminaire sur la cybersecurite au Déppartement sur le thème : Cyber-attaque et Cyber-defense",
+        title: "Séminaire sur la cybersecurite"
+      },
+      {
+        id: 2,
+        date: "12 mars 2021",
+        content: "il sera organisé le 12 avril un séminaire sur la cybersecurite au Déppartement sur le thème : Cyber-attaque et Cyber-defense",
+        title: "Séminaire sur la cybersecurite"
+      },
+      {
+        id: 3,
+        date: "12 mars 2021",
+        content: "il sera organisé le 12 avril un séminaire sur la cybersecurite au Déppartement sur le thème : Cyber-attaque et Cyber-defense",
+        title: "Séminaire sur la cybersecurite"
+      }
+    ]);
+
   return (
     <Layout title="presentation" nav={{ mainMenu: "departement", subMenu: "presentation" }}>
       <div className="container-fluid" style={{ paddingLeft: "0px", paddingRight: "0px", marginTop: "-20px" }}>
@@ -80,7 +103,45 @@ function Presentation() {
       <div className="container-fluid p-0">
         <div className="row m-0 mt-3">
           <div className="col section-lists-photo m-0">
-            les photo ici
+            <header className="list-photo--header">Quelques Photos</header>
+
+            <section className="list-photo--main">
+              <div className="row">
+                <div className="col-md-6 col-sm-6 p-2">
+                  <div className="photo-item">
+                    <img src="/static/home.png" width="100%" height={200} alt="" />
+                  </div>
+                </div>
+
+                <div className="col-md-6 col-sm-6 p-2">
+                  <div className="photo-item">
+                    <img src="/static/home.png" width="100%" height={200} alt="" />
+                  </div>
+                </div>
+
+                <div className="col-md-6 col-sm-6 p-2">
+                  <div className="photo-item">
+                    <img src="/static/home.png" width="100%" height={200} alt="" />
+                  </div>
+                </div>
+
+                <div className="col-md-6 col-sm-6 p-2">
+                  <div className="photo-item">
+                    <img src="/static/home.png" width="100%" height={200} alt="" />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div className="row mt-4">
+          <div className="col-md-6 barbillard evenement-barbillard h-auto">
+            <ArticleBarbillard barbillards={barbillards} />
+          </div>
+
+          <div className="col-md-6 links">
+            <UsefullLink />
           </div>
         </div>
       </div>
