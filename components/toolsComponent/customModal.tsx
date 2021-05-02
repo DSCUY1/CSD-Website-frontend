@@ -54,3 +54,18 @@ export function BarbillardModal({ show, setClose, barbillard }) {
     </Modal>
   )
 }
+
+export function ModalShowPhoto({ show, photo, setClose }) {
+  return (
+    <Modal show={show} onHide={setClose}>
+      <Modal.Body>
+        <div className="modal-body--header">
+          <span className="modal-body--close" onClick={setClose}>&times;</span>
+        </div>
+        <div className="modal-body--content">
+          <img src={`/static/${photo}`} alt="" />
+        </div>
+      </Modal.Body>
+    </Modal>
+  );
+}

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Layout from '../../components/Layout';
 import Link from 'next/link';
 import { ImportantImage } from '../../components/toolsComponent/customCarousels';
+import { ModalShowPhoto } from '../../components/toolsComponent/customModal';
 import { ArticleBarbillard } from '../../components/articles';
 import UsefullLink from "../../components/usefullLink";
 
@@ -26,6 +27,16 @@ function Presentation() {
         title: "Séminaire sur la cybersecurite"
       }
     ]);
+
+  const [photo, setPhoto] = useState("home.png");
+  const [show, setShow] = useState(false);
+
+  const images = [
+    "home.png",
+    "locate.png",
+    "home.png",
+    "locate.png"
+  ];
 
   return (
     <Layout title="presentation" nav={{ mainMenu: "departement", subMenu: "presentation" }}>
@@ -107,31 +118,24 @@ function Presentation() {
 
             <section className="list-photo--main">
               <div className="row">
-                <div className="col-md-6 col-sm-6 p-2">
-                  <div className="photo-item">
-                    <img src="/static/home.png" width="100%" height={200} alt="" />
-                  </div>
-                </div>
+                {
+                  images.map(image => {
 
-                <div className="col-md-6 col-sm-6 p-2">
-                  <div className="photo-item">
-                    <img src="/static/home.png" width="100%" height={200} alt="" />
-                  </div>
-                </div>
+                    return (
+                      <div className="col-md-3 col-sm-6 p-2">
+                        <div className="photo-item" onClick={() => { setPhoto(image); setShow(true);}}>
+                          <img src={`/static/${image}`} width="100%" height={200} alt="" />
+                        </div>
+                      </div>
+                    );
 
-                <div className="col-md-6 col-sm-6 p-2">
-                  <div className="photo-item">
-                    <img src="/static/home.png" width="100%" height={200} alt="" />
-                  </div>
-                </div>
+                  })
+                }
 
-                <div className="col-md-6 col-sm-6 p-2">
-                  <div className="photo-item">
-                    <img src="/static/home.png" width="100%" height={200} alt="" />
-                  </div>
-                </div>
               </div>
             </section>
+
+            <ModalShowPhoto photo={photo} show={show} setClose={() => setShow(false)} />
           </div>
         </div>
 
