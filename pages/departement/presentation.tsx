@@ -93,17 +93,23 @@ function Presentation() {
               </div>
               <div className="card" id="chef-card">
                 <div className="card-body">
-                  <header className="chef-card--header">
+                  <aside>
                     <img src="/static/home.png" alt="" />
-                    <div className="chef-card--info">
-                      <span>Dr Aminou</span>
-                      <span className="text-muted">Chef du departement</span>
-                    </div>
-                  </header>
-                  <hr />
-                  <section className="chef-card--content">
-                    Ici on aura le mot du chef de departement, avec un message de bienvenu.
-                  </section>
+                  </aside>
+                  <div>
+                    <header className="chef-card--header">
+                      <div className="chef-card--info">
+                        <span>Dr Aminou</span>
+                        <span className="text-muted">Chef du departement</span>
+                      </div>
+                    </header>
+                    <hr />
+                    <section className="chef-card--content">
+                      Ici on aura le mot du chef de departement, avec un message de bienvenu.
+                      le but est de tester si le texte qui se positionnera dans le bloc depasse, comment va se comporter le bloc parent ?
+                      cela reste a verifier et il faudrait donc y ajouter plein de texte inutile pour le moment et voir comment ca se comporte
+                    </section>
+                  </div>
                 </div>
               </div>
             </div>

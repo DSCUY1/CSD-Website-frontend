@@ -47,7 +47,22 @@
 }
 
 #chef-card div.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 10px 15px 15px 15px;
+}
+
+#chef-card aside {
+  width: auto;
+  height: 100%;
+  padding-right: 15px;
+}
+
+#chef-card aside img {
+  width: 200px;
+  height: 250px;
 }
 
 .chef-card--header {
@@ -57,12 +72,15 @@
   align-items: center;
 }
 
+.chef-card--content {
+  font-family: "Roboto Regular";
+  font-size: 14px;
+}
+
 .chef-card--info {
-  margin-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  line-height: 30px;
 }
 
 .chef-card--info span:first-child {
@@ -73,12 +91,6 @@
 .chef-card--info span:last-child {
   font-size: 13px;
   font-family: "Roboto regular";
-}
-
-.chef-card--header img {
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
 }
 
 .section-lists-photo {
@@ -159,5 +171,10 @@
   .modal-body--content {
     height: 300px;
     width: 100%;
+  }
+
+  #chef-card aside img {
+    width: 150px;
+    height: 200px;
   }
 }
