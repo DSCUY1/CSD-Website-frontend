@@ -105,9 +105,8 @@ function Presentation() {
                     </header>
                     <hr />
                     <section className="chef-card--content">
-                      Ici on aura le mot du chef de departement, avec un message de bienvenu.
-                      le but est de tester si le texte qui se positionnera dans le bloc depasse, comment va se comporter le bloc parent ?
-                      cela reste a verifier et il faudrait donc y ajouter plein de texte inutile pour le moment et voir comment ca se comporte
+                      Cher etudiants, bonjour | bonsoir ca dependra de l'heur a laquelle vous verez ce message.
+                      Je tiens a vous souhaiter une bienvenu au departement Informatique, Merci.
                     </section>
                   </div>
                 </div>

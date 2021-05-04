@@ -178,3 +178,10 @@
     height: 200px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #chef-card aside img {
+    width: 100px;
+    height: 150px;
+  }
+}
