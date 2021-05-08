@@ -5,6 +5,7 @@ import '../styles/barbillard.css';
 import '../styles/evenement.css';
 import '../styles/coordonnee.css';
 import '../styles/presentation.css';
+import '../styles/condition_admission.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
