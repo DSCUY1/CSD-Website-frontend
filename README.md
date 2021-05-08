@@ -1,18 +1,32 @@
 # CSD-Website-frontend
 Computer Science Department Website -- Frontend with React-JS and Next JS
 
-
-
-
-
-
-
-
-
-
-
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Installing development environment
+
+Before getting started, you should install all tools that will help you to contribute to this repository.
+
+1. Install npm
+On Linux, in your terminal, run this command:
+
+```bash
+sudo apt-get update
+# and
+sudo apt-get install npm
+```
+
+2. Install nodejs
+nodejs is coming by default on Ubuntu 20.04.
+If it's not install yet, run this command in your terminal:
+
+```bash
+sudo apt-get update
+# and
+sudo apt-get install nodejs
+```
+3. clone the project on your computer
+clone the project on your computer and start contributing
 
 ## Getting Started
 
