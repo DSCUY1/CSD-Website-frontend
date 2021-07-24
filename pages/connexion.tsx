@@ -2,6 +2,24 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 const Connexion = () => {
+
+  React.useEffect(() => {
+    const pw = document.getElementById("pw");
+    const icon = document.getElementById("icon-view");
+
+    icon.onclick = function() {
+      if (pw.type === "text") {
+        pw.type = "password";
+        icon.classList.remove("bi-eye-fill");
+        icon.classList.add("bi-eye-slash-fill");
+      } else {
+        pw.type = "text";
+        icon.classList.remove("bi-eye-slash-fill");
+        icon.classList.add("bi-eye-fill");
+      }
+    }
+  });
+
   return (
     <Layout title="connexion" nav={{ mainMenu: "", subMenu: "" }}>
       <section className="authentication-interface">
@@ -34,8 +52,8 @@ const Connexion = () => {
 
                   <div>
                     <label htmlFor="email">Mot de passe</label>
-                    <input type="text" />
-                    <i className="bi bi-eye-fill view-password" style={{color: "grey"}}></i>
+                    <input type="password" id="pw" />
+                    <i id="icon-view" className="bi bi-eye-slash-fill view-password" style={{color: "grey"}}></i>
                   </div>
 
                   <div>
