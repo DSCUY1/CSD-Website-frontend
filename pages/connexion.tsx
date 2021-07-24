@@ -7,12 +7,12 @@ const Connexion = () => {
     const icon = document.getElementById("icon-view");
 
     icon.onclick = function() {
-      if (pw.type === "text") {
-        pw.type = "password";
+      if (pw["type"] === "text") {
+        pw["type"] = "password";
         icon.classList.remove("bi-eye-fill");
         icon.classList.add("bi-eye-slash-fill");
       } else {
-        pw.type = "text";
+        pw["type"] = "text";
         icon.classList.remove("bi-eye-slash-fill");
         icon.classList.add("bi-eye-fill");
       }
