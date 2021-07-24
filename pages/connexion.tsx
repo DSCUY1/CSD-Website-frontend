@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Connexion = () => {
 
@@ -23,14 +24,20 @@ const Connexion = () => {
     <section className="authentication-interface">
       <section className="connexion">
         <header className="connexion-header">
-          <div className="connexion-logo">
-            <img src="/static/logo_dark.png" alt="" />
+          <div>
+            <div className="connexion-logo">
+              <img src="/static/logo_dark.png" alt="" />
+            </div>
+            <div className="connexion-logo-info">
+              <span>UNIVERSITE DE YAOUNDE I</span>
+              <span>Sapientia-Collativa-Cognitio</span>
+              <span>Cameroun</span>
+            </div>
           </div>
-          <div className="connexion-logo-info">
-            <span>UNIVERSITE DE YAOUNDE I</span>
-            <span>Sapientia-Collativa-Cognitio</span>
-            <span>Cameroun</span>
-          </div>
+
+          <Link href="/">
+            <button className="btn btn-back">Accueil</button>
+          </Link>
         </header>
         <div className="connexion-sub-header">Système d'authentification</div>
         <section className="connexion-content">

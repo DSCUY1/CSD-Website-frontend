@@ -44,6 +44,15 @@
     align-items: center;
 }
 
+.connexion-header > div {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .connexion-logo {
     height: 100%;
     width: 50px;
@@ -227,6 +236,26 @@
     align-items: center;
     padding: 0 30px;
     margin-top: 10px;
+}
+
+.btn-back {
+    width: auto;
+    color: white;
+    background-color: #6a4e77;
+    font-size: 12px;
+    height: 35px;
+    border-radius: 3px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin-left: auto;
+}
+
+.btn-back:hover,
+.btn-create-account:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .connexion-aside ul {
