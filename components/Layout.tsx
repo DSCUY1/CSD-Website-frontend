@@ -5,6 +5,7 @@ import {AlertMessage} from './toolsComponent/customCarousels';
 import Footer from './footer';
 import NavbarNavigation from './navbar';
 import NavbarNavigationMobile from './navbarMobile';
+import Link from 'next/link';
 import $ from 'jquery';
 
 class Layout extends Component {
@@ -310,7 +311,9 @@ class Layout extends Component {
                 </div>
                 <div className="d-flex header-section-info">
                   <a className="color-violet fst-italic text-decoration-none">Visite le site de UY1</a>
-                  <button className="btn text-light" type="button">connexion</button>
+                  <Link href="/connexion">
+                    <button className="btn text-light" type="button">connexion</button>
+                  </Link>
                 </div>
               </div>
 

@@ -1,0 +1,322 @@
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../font/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../font/Roboto/Roboto-Medium.ttf");
+}
+
+.authentication-interface {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.connexion {
+    width: 80%;
+    height: auto;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.connexion-header {
+    height: 80px;
+    width: all;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.connexion-logo {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connexion-logo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0;
+    width: auto;
+    line-height: 15px;
+}
+
+.connexion-logo-info span:first-child {
+    font-size: 11px;
+    font-family: "Roboto Bold";
+    text-align: center;
+}
+
+.connexion-logo-info span:not(:first-child) {
+    font-size: 9px;
+    font-family: "Roboto Medium";
+    text-align: center;
+}
+
+.connexion-logo-info span:last-child {
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+.connexion-sub-header {
+    height: 50px;
+    width: all;
+    background-color: #6a4e77;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Roboto Bold";
+    font-size: 20px;
+    color: white;
+}
+
+.connexion-content-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: all;
+    height: auto;
+    padding: 10px;
+}
+
+.connexion-content-main section {
+    width: 50%;
+    height: auto;
+}
+
+.connexion-content-main section:first-child {
+    border-right: 1px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.connexion-content-main section:first-child .lock {
+    width: 50px;
+    height: auto;
+}
+
+.connexion-content-main section:first-child .connexion-form {
+    width: calc(100% - 50px);
+    height: auto;
+    padding-right: 60px;
+}
+
+.connexion-form h3 {
+    font-size: 22px;
+    padding: 0;
+    margin: 15px 0 10px 0;
+    font-family: "Roboto Medium";
+}
+
+.connexion-form label {
+    font-size: 12px;
+    color: grey;
+    font-family: "Roboto Regular";
+}
+
+.connexion-form > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.connexion-form > div input {
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.view-password {
+    position: absolute;
+    bottom: 3px;
+    right: 7px;
+}
+
+.btn-connexion {
+    width: 50%;
+    color: white;
+    background-color: #6a4e77;
+    font-size: 12px;
+    height: 25px;
+    border-radius: 3px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-connexion:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.keep-session {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.keep-session input {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.keep-session span {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.connexion-content-main section:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: all;
+    padding: 20px 50px 20px 60px;
+}
+
+.connexion-aside div {
+    margin-bottom: 20px;
+}
+
+.connexion-aside div:last-child {
+    margin-top: 20px;
+}
+
+.connexion-aside div h3 {
+    font-size: 22px;
+    padding: 0;
+    font-family: "Roboto Medium";
+}
+
+.btn-create-account {
+    width: auto;
+    color: white;
+    background-color: #6a4e77;
+    font-size: 12px;
+    height: 25px;
+    border-radius: 3px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.connexion-aside ul {
+    padding-left: 15px;
+}
+
+.connexion-aside ul li {
+    font-size: 11px;
+    font-family: "Roboto Regular";
+    color: #6a4e77;
+}
+
+.connexion-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+    padding: 15px 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "Roboto Regular";
+}
+
+.connexion-footer span:first-child {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .connexion {
+        width: 95%;
+        height: auto;
+        border: 1px solid lightgrey;
+        border-radius: 2px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .connexion-content-main {
+        flex-direction: column;
+    }
+
+    .connexion-content-main section {
+        width: 100%;
+        height: auto;
+    }
+
+    .connexion-content-main section:first-child {
+        border-width: 0;
+    }
+
+    .connexion-content-main section:last-child {
+        padding: 20px 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .connexion-header {
+        justify-content: center;
+    }
+
+    .connexion-sub-header {
+        justify-content: center;
+    }
+
+    .connexion-sub-header {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .connexion-content-main section:first-child .connexion-form {
+        padding-right: 0;
+    }
+
+    .connexion-footer {
+        margin: 10px;
+    }
+
+    .connexion-content-main section:last-child {
+        padding: 20px 0 0 50px;
+    }
+
+    button.btn-create-account,
+    button.btn-connexion {
+        width: 100%;
+    }
+}
