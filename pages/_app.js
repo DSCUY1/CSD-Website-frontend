@@ -8,6 +8,7 @@ import '../styles/coordonnee.css';
 import '../styles/presentation.css';
 import '../styles/condition_admission.css';
 import '../styles/connexion.css';
+import '../styles/enseignant.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
